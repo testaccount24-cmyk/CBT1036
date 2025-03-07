@@ -1,0 +1,3989 @@
+./ ADD NAME=AMAMAIN  0101-20211-20211-1200-00105-00105-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        AMAMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER044   DC    A(IER044T)
+         DC    A(L'IER044T+L'IER044A+L'IER044B)
+*
+IER063   DC    A(IER063T)
+         DC    A(L'IER063T+L'IER063A)
+*
+IER901   DC    A(IER901T)
+         DC    A(L'IER901T+L'IER901A)
+*
+IER902   DC    A(IER902T)
+         DC    A(IER902Z-IER902T)
+*
+IER903   DC    A(IER903T)
+         DC    A(L'IER903T+L'IER903A)
+*
+IER904   DC    A(IER904T)
+         DC    A(IER904Z-IER904T)
+*
+IER905   DC    A(IER905T)
+         DC    A(L'IER905T+L'IER905A)
+*
+IER906   DC    A(IER906T)
+         DC    A(L'IER906T+L'IER906A)
+*
+IER907   DC    A(IER907T)
+         DC    A(L'IER907T+L'IER907A)
+*
+IER908   DC    A(IER908T)
+         DC    A(L'IER908T+L'IER908A)
+*
+IER909   DC    A(IER909T)
+         DC    A(L'IER909T+L'IER909A)
+*
+IER910   DC    A(IER910T)
+         DC    A(L'IER910T+L'IER910A)
+*
+IER911   DC    A(IER911T)
+         DC    A(IER911X-IER911T)
+*
+IER921   DC    A(IER921T)
+         DC    A(L'IER921T+L'IER921A)
+*
+IER044T  DC    C'IER044I Exit E'
+IER044A  DC    C'??'
+IER044B  DC    C' invalid option'
+*
+IER063T  DC    C'IER063A OPEN Error - '
+IER063A  DC    CL8' '
+*
+IER901T  DC    C'IER901I Input Buffer Table Addr - '
+IER901A  DC    CL6' '
+*
+IER902T  DC    C'IER902I Output Buffer Addr - '
+IER902A  DC    CL6' '
+         DC    C', '
+IER902B  DC    CL6' '
+IER902Z  EQU   *
+*
+IER903T  DC    C'IER903I RSA Table Addr - '
+IER903A  DC    CL6' '
+*
+IER904T  DC    C'IER904I Tree Addr from '
+IER904A  DC    CL6' '
+         DC    C' to '
+IER904B  DC    CL6' '
+IER904Z  EQU   *
+*
+IER905T  DC    C'IER905I Move Routine Addr - '
+IER905A  DC    CL6' '
+*
+IER906T  DC    C'IER906I DCB Table Addr - '
+IER906A  DC    CL6' '
+*
+IER907T  DC    C'IER907I Output CCW Addr - '
+IER907A  DC    CL6' '
+*
+IER908T  DC    C'IER908I Output IOB Addr - '
+IER908A  DC    CL6' '
+*
+IER909T  DC    C'IER909I OPEN List Addr - '
+IER909A  DC    CL6' '
+*
+IER910T  DC    C'IER910I Generated Storage End Addr - '
+IER910A  DC    CL6' '
+*
+IER911T  DC    C'IER911I Getmain - '
+IER911A  DC    CL10' '
+         DC    C',L= '
+IER911B  DC    CL6' '
+         DC    C',A= '
+IER911C  DC    CL6' '
+IER911X  EQU   *
+*
+IER921T  DC    C'IER921I Sort Buffer Table Addr - '
+IER921A  DC    CL6' '
+*
+./ ADD NAME=AMBMAIN  0101-20211-20211-1200-00073-00073-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        AMBMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER044   DC    A(IER044T)
+         DC    A(L'IER044T+L'IER044A+L'IER044B)
+*
+IER063   DC    A(IER063T)
+         DC    A(L'IER063T+L'IER063A)
+*
+IER920   DC    A(IER920T)
+         DC    A(L'IER920T+L'IER920A)
+*
+IER921   DC    A(IER921T)
+         DC    A(L'IER921T+L'IER921A)
+*
+IER922   DC    A(IER922T)
+         DC    A(IER922Z-IER922T)
+*
+IER923   DC    A(IER923T)
+         DC    A(L'IER923T+L'IER923A)
+*
+IER924   DC    A(IER924T)
+         DC    A(L'IER924T+L'IER924A)
+*
+IER925   DC    A(IER925T)
+         DC    A(L'IER925T+L'IER925A)
+*
+IER926   DC    A(IER926T)
+         DC    A(L'IER926T+L'IER926A)
+*
+IER927   DC    A(IER927T)
+         DC    A(L'IER927T+L'IER927A)
+*
+IER044T  DC    C'IER044I Exit E'
+IER044A  DC    C'??'
+IER044B  DC    C' invalid option'
+*
+IER063T  DC    C'IER063A OPEN Error - '
+IER063A  DC    CL8' '
+*
+IER920T  DC    C'IER920I Generated Storage End Addr - '
+IER920A  DC    CL6' '
+*
+IER921T  DC    C'IER921I Sort Buffer Table Addr - '
+IER921A  DC    CL6' '
+*
+IER922T  DC    C'IER922I Output Buffer Addr - '
+IER922A  DC    CL6' '
+         DC    C', '
+IER922B  DC    CL6' '
+IER922Z  EQU   *
+*
+IER923T  DC    C'IER923I MOVE Routine Addr - '
+IER923A  DC    CL6' '
+*
+IER924T  DC    C'IER924I DCB Table Addr - '
+IER924A  DC    CL6' '
+*
+IER925T  DC    C'IER925I Output CCW Addr - '
+IER925A  DC    CL6' '
+*
+IER926T  DC    C'IER926I IOB Table Addr - '
+IER926A  DC    CL6' '
+*
+IER927T  DC    C'IER927I Input CCW Addr - '
+IER927A  DC    CL6' '
+*
+./ ADD NAME=AMCMAIN  0101-20211-20211-1200-00061-00061-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        AMCMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER044   DC    A(IER044T)
+         DC    A(L'IER044T+L'IER044B+L'IER044C)
+*
+IER063   DC    A(IER063T)
+         DC    A(L'IER063T+L'IER063B)
+*
+IER940   DC    A(IER940T)
+         DC    A(L'IER940T+L'IER940A)
+*
+IER941   DC    A(IER941T)
+         DC    A(L'IER941T+L'IER941A)
+*
+IER942   DC    A(IER942T)
+         DC    A(IER942Z-IER942T)
+*
+IER943   DC    A(IER943T)
+         DC    A(L'IER943T+L'IER943A)
+*
+IER944   DC    A(IER944T)
+         DC    A(L'IER944T+L'IER944A)
+*
+IER945   DC    A(IER945T)
+         DC    A(L'IER945T+L'IER945A)
+*
+IER044T  DC    C'IER044I Exit E'
+IER044B  DC    C'??'
+IER044C  DC    C' invalid option'
+*
+IER063T  DC    C'IER063A OPEN Error - '
+IER063B  DC    CL8' '
+*
+IER940T  DC    C'IER940I Generated Storage End Addr - '
+IER940A  DC    CL6' '
+*
+IER941T  DC    C'IER941I Input Buffer Table Addr - '
+IER941A  DC    CL6' '
+*
+IER942T  DC    C'IER942I Output Buffer Addr - '
+IER942A  DC    CL6' '
+         DC    C', '
+IER942B  DC    CL6' '
+IER942Z  EQU   *
+*
+IER943T  DC    C'IER943I Move Routine Addr - '
+IER943A  DC    CL6' '
+*
+IER944T  DC    C'IER944I DCB Table Addr - '
+IER944A  DC    CL6' '
+*
+IER945T  DC    C'IER945I Input CCW Addr - '
+IER945A  DC    CL6' '
+*
+./ ADD NAME=BAS      0101-20211-20211-1200-00011-00011-00000-RELEASE 00
+         MACRO
+&LABEL   BAS   &R1,&LAB
+.*
+.*       GENERATE BAL OPCODE WHEN ZP60025 USER MOD NOT INSTALLED
+.*
+         DC    0H'0'
+&LABEL   BAL   &R1,&LAB
+         ORG   *-4
+         DC    X'4D'                 BAS OPCODE
+         ORG
+         MEND
+./ ADD NAME=BASR     0101-20211-20211-1200-00011-00011-00000-RELEASE 00
+         MACRO
+&LABEL   BASR  &R1,&R2
+.*
+.*       GENERATE BALR OPCODE WHEN ZP60025 USER MOD NOT INSTALLED
+.*
+         DC    0H'0'
+&LABEL   BALR  &R1,&R2
+         ORG   *-2
+         DC    X'0D'                      BASR OPCODE
+         ORG
+         MEND
+./ ADD NAME=BUILDS   0101-20211-20211-1200-00032-00032-00000-RELEASE 00
+         MACRO
+&NAME    BUILDS &BUFLIST,&NUMSIZE
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       BUILD BUFFER POOL
+.*
+         AIF   ('&BUFLIST' NE '(1)' OR '&NUMSIZE' NE '(0)').NOGOOD
+&NAME    STM   R2,R4,12(R13)       SAVE REGS
+         L     R2,0(,R1)           FIRST BUFFER ADDR-8
+         LR    R3,R0               MOVE NO OF BUFFERS AND LENGTH TO R3
+         LA    R3,3(,R3)           INCR BY 3
+         ST    R3,4(,R2)           STORE IN FIRST BUFFER-4
+         NI    7(R2),X'FC'         ROUND LENGTH TO FULL WORD
+         LA    R4,8(,R2)           R4 POINTS TO ACTUAL BUFFER
+         ST    R4,0(,R2)           STORE BUFFER ADDR IN 8 BYTE CONT
+         SRL   R3,16               POSITION NO OF BUFFERS
+BLDCONT  BCT   R3,BLDLOOP          ALL DONE ?
+         B     BUILDEND            YES
+*
+BLDLOOP  LA    R1,4(,R1)           NO, UP POINTER TO PARAMETER LIST
+         L     R2,0(,R1)           GET ADDR OF NEXT BUFFER
+         ST    R2,0(,R4)           LINK BUFFERS
+         LR    R4,R2               KEEP ADDR OF NEW BUFFER
+         B     BLDCONT             CONTINUE BUILDING
+*
+BUILDEND SR    R2,R2
+         ST    R2,0(,R4)           PUT ZERO'S IN LAST LINK LOCATION
+         LM    R2,R4,12(R13)       RESTORE REGISTERS
+         MEXIT
+.NOGOOD  MNOTE 'OPERAND OF BUILDS MACRO MUST BE ''(1),80)'''
+         MEND
+./ ADD NAME=CPICNTL  0101-20211-20211-1200-00311-00311-00000-RELEASE 00
+         MACRO
+         CPICNTL &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       AN INTERNAL MACRO CALLED BY -
+.*       CPITEST, CPISETON, CPISETOF, CPIFLIP
+.*       TO DETERMINE THE TARGET BYTE IN THE CPICNTL FIELD
+.*       IN THE CPI BASED ON THE NAME OF THE INDICATOR BIT(S)
+.*       PASSED IN FLAGS
+.*
+.*       NOTE -
+.*       ANY CHANGES TO THE CPI FLAGS MAPPED IN SMCPI MUST
+.*       BE REFLECTED IN THIS MACRO
+.*
+.*       THE CORRECT TARGET OF A TM, OI, NI OR XI INSTRUCTION
+.*       WILL BE RETURNED IN THE GLOBAL VARIABLE IERCNTL
+.*
+.*       DECLARE LCLS
+.*
+         LCLA  &I                      LOOP VARIABLE
+         LCLA  &J                      LOOP VARIABLE
+         LCLA  &LENFLAG                LENGTH OF FLAGS STRING
+         LCLC  &NAMES(128)             TABLE OF FLAG FIELD NAMES
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+.*       VALIDATE PARAMETER
+.*
+         AIF   (K'&FLAGS GT 3).OK
+         MNOTE 12,'FLAG FIELD(S) NOT PROVIDED'
+         MEXIT
+.OK      ANOP
+.*
+.*--------------------------------------------------------------------
+.*
+.*       INITIALIZE NAMES WITH FLAG NAMES ASSIGNED BY THE SMCPI MACRO
+.*
+.*       NOTE -
+.*       ANY CHANGES TO THE CPI FLAGS MAPPED IN SMCPI MUST
+.*       BE REFLECTED IN THIS MACRO AT THIS LOCATION
+.*
+.*--------------------------------------------------------------------
+.*                                 +0
+&NAMES(1)   SETC 'CPIFIX'
+&NAMES(2)   SETC 'CPIVAR'
+&NAMES(3)   SETC 'CPISCF'
+&NAMES(4)   SETC 'CPIMCF'
+&NAMES(5)   SETC 'CPIBALN'
+&NAMES(6)   SETC 'CPIPOLY'
+&NAMES(7)   SETC 'CPIOSC'
+&NAMES(8)   SETC 'CPI8WAY'
+.*                                 +1
+&NAMES(9)   SETC 'CPI16WAY'
+&NAMES(10)  SETC 'CPITAPE'
+&NAMES(11)  SETC 'CPIDISK'
+&NAMES(12)  SETC 'CPINODC'
+&NAMES(13)  SETC 'CPINODCI'
+&NAMES(14)  SETC 'CPINODCO'
+&NAMES(15)  SETC 'CPINOMOD'
+&NAMES(16)  SETC 'CPIMODS'
+.*                                 +2
+&NAMES(17)  SETC 'CPILE256'
+&NAMES(18)  SETC 'CPIGT256'
+&NAMES(19)  SETC 'CPISKIP'
+&NAMES(20)  SETC 'CPIPH1'
+&NAMES(21)  SETC 'CPIPH2'
+&NAMES(22)  SETC 'CPIPH3'
+&NAMES(23)  SETC 'CPIMERGO'
+&NAMES(24)  SETC 'CPICHKPT'
+.*                                 +3
+&NAMES(25)  SETC 'CPIEQUAL'
+&NAMES(26)  SETC 'CPIEXTRT'
+&NAMES(27)  SETC 'CPIUOSEQ'
+&NAMES(28)  SETC 'CPIPH1CO'
+&NAMES(29)  SETC 'CPIDMCO'
+&NAMES(30)  SETC 'CPIATT'
+&NAMES(31)  SETC 'CPIFSZE'
+&NAMES(32)  SETC 'CPIPEOF'
+.*                                 +4
+&NAMES(33)  SETC 'CPIETCF'
+&NAMES(34)  SETC 'CPISCARD'
+&NAMES(35)  SETC 'CPIMCARD'
+&NAMES(36)  SETC 'CPIRCARD'
+&NAMES(37)  SETC 'CPIMODCD'
+&NAMES(38)  SETC 'CPIEXSYS'
+&NAMES(39)  SETC 'CPIDWA'
+&NAMES(40)  SETC 'CPISWA'
+.*                                 +5
+&NAMES(41)  SETC 'CPIREADE'
+&NAMES(42)  SETC 'CPIWRITE'
+&NAMES(43)  SETC 'CPIEVNOD'
+&NAMES(44)  SETC 'CPIMPSE1'
+&NAMES(45)  SETC 'CPIMPSEN'
+&NAMES(46)  SETC 'CPIINWRK'
+&NAMES(47)  SETC 'CPITAU'
+&NAMES(48)  SETC 'CPINCHAN'
+.*                                 +6
+&NAMES(49)  SETC 'CPIDEBB'
+&NAMES(50)  SETC 'CPIREADF'
+&NAMES(51)  SETC 'CPICLOSR'
+&NAMES(52)  SETC 'CPIBLKF'
+&NAMES(53)  SETC 'CPIREADB'
+&NAMES(54)  SETC 'CPI2301'
+&NAMES(55)  SETC 'CPI2314'
+&NAMES(56)  SETC 'CPIF56 '
+.*                                 +7
+&NAMES(57)  SETC 'CPIUEOF'
+&NAMES(58)  SETC 'CPIRMAXR'
+&NAMES(59)  SETC 'CPIUIIP'
+&NAMES(60)  SETC 'CPI7TRK'
+&NAMES(61)  SETC 'CPICRCX'
+&NAMES(62)  SETC 'CPI2311'
+&NAMES(63)  SETC 'CPIVALCT'
+&NAMES(64)  SETC 'CPIACCPT'
+.*                                 +8
+&NAMES(65)  SETC 'CPISTOPF'
+&NAMES(66)  SETC 'CPIDYNA'
+&NAMES(67)  SETC 'CPIDYNI'
+&NAMES(68)  SETC 'CPIEQUO'
+&NAMES(69)  SETC 'CPIERET'
+&NAMES(70)  SETC 'CPIESTA'
+&NAMES(71)  SETC 'CPIECHK'
+&NAMES(72)  SETC 'CPIFSEX'
+.*                                 +9
+&NAMES(73)  SETC 'CPILIST'
+&NAMES(74)  SETC 'CPIRSET'
+&NAMES(75)  SETC 'CPISMFR'
+&NAMES(76)  SETC 'CPISMFL'
+&NAMES(77)  SETC 'CPILIBS'
+&NAMES(78)  SETC 'CPIMAXS'
+&NAMES(79)  SETC 'CPIABMSG'
+&NAMES(80)  SETC 'CPIF80'
+.*                                 +10
+&NAMES(81)  SETC 'CPICALL'
+&NAMES(82)  SETC 'CPICCRT'
+&NAMES(83)  SETC 'CPIPALL'
+&NAMES(84)  SETC 'CPIPCRT'
+&NAMES(85)  SETC 'CPIOSTMT'
+&NAMES(86)  SETC 'CPIDSTMT'
+&NAMES(87)  SETC 'CPIVSEQ'
+&NAMES(88)  SETC 'CPICHCK'
+.*                                 +11
+&NAMES(89)  SETC 'CPIDIAG'
+&NAMES(90)  SETC 'CPIDSIM'
+&NAMES(91)  SETC 'CPITEXCP'
+&NAMES(92)  SETC 'CPITWAIT'
+&NAMES(93)  SETC 'CPITMODF'
+&NAMES(94)  SETC 'CPITSCPI'
+&NAMES(95)  SETC 'CPITSPPI'
+&NAMES(96)  SETC 'CPITBRKP'
+.*                                 +12
+&NAMES(97)  SETC 'CPIME11'
+&NAMES(98)  SETC 'CPIME15'
+&NAMES(99)  SETC 'CPIME16'
+&NAMES(100) SETC 'CPIME17'
+&NAMES(101) SETC 'CPIME18'
+&NAMES(102) SETC 'CPIME21'
+&NAMES(103) SETC 'CPIME25'
+&NAMES(104) SETC 'CPIME27'
+.*                                 +13
+&NAMES(105) SETC 'CPIME28'
+&NAMES(106) SETC 'CPIME31'
+&NAMES(107) SETC 'CPIME35'
+&NAMES(108) SETC 'CPIME37'
+&NAMES(109) SETC 'CPIME38'
+&NAMES(110) SETC 'CPIME61'
+&NAMES(111) SETC 'CPIME19'
+&NAMES(112) SETC 'CPIME29'
+.*                                 +14
+&NAMES(113) SETC 'CPIME39'
+&NAMES(114) SETC 'CPIMER1'
+&NAMES(115) SETC 'CPIMER2'
+&NAMES(116) SETC 'CPIMER3'
+&NAMES(117) SETC 'CPIMER4'
+&NAMES(118) SETC 'CPIMER5'
+&NAMES(119) SETC 'CPIMVSI'
+&NAMES(120) SETC 'CPIMVSO'
+.*                                 +15
+&NAMES(121) SETC 'CPIF121'
+&NAMES(122) SETC 'CPIF122'
+&NAMES(123) SETC 'CPIF123'
+&NAMES(124) SETC 'CPIF124'
+&NAMES(125) SETC 'CPIF125'
+&NAMES(126) SETC 'CPIF126'
+&NAMES(127) SETC 'CPIF127'
+&NAMES(128) SETC 'CPIF128'
+.*
+.*--------------------------------------------------------------------
+.*
+.*       IDENTIFY THE NAME OF THE FIRST VARIABLE IN THE
+.*       PARAMETER STRING
+.*
+.*--------------------------------------------------------------------
+.*
+&LENFLAG SETA K'&FLAGS
+&IERCNTL SETC  ''
+.*
+&I       SETA  0                   SET LOOP VARIABLE
+.LOOP    ANOP                      LOOK FOR A + OR - SEPARATOR
+&I       SETA  &I+1                INCREMENT POINTER
+         AIF   ('&FLAGS'(&I,1) EQ '+' OR '&FLAGS'(&I,1) EQ '-').SEP
+         AIF   (&I NE &LENFLAG).LOOP
+         AGO   .NOSIGN
+.SEP     ANOP                      SEPARATOR LOCATED
+&I       SETA  &I-1                I = LENGTH OF FIRST OR ONLY FIELD
+.NOSIGN  ANOP
+.*
+.*       THE CODE HERE SHOULD BE ENHANCED TO CHECK IF EACH AND
+.*       EVERY VARIABLE NAME IN FLAGS IS VALID AND ALL VARIABLES
+.*       APPLY TO THE SAME BYTE IN CPICNTL
+.*       HOWEVER AS ALL THE VARIABLE NAMES WERE PROGRAM
+.*       GENERATED THERE ARE NO ERRORS AT THIS TIME
+.*
+.*--------------------------------------------------------------------
+.*
+.*       SCAN THROUGH THE NAMES ARRAY TO FIND A MATCH WITH THE
+.*       NAME OF THE FIRST VARIABLE
+.*
+.*       WHEN A MATCH IS FOUND BRANCH TO GENERATE THE CORRECT
+.*       TARGET VARIABLE
+.*
+.*--------------------------------------------------------------------
+.*
+&J       SETA  1                   J IS THE INDEX FOR NAMES
+.LOOPA   ANOP
+         AIF   ('&NAMES(&J)' EQ '&FLAGS'(1,&I)).VARFIND
+&J       SETA  &J+1                INCREMENT POINTER
+         AIF   (&J GT 128).BADFLAG
+         AGO   .LOOPA
+.VARFIND ANOP                      FLAG - NAMES MATCH
+         AIF   (&J GT 0  AND &J LT 9).OFFSET0      1   -  8
+         AIF   (&J GT 8  AND &J LT 17).OFFSET1     9   - 16
+         AIF   (&J GT 16 AND &J LT 25).OFFSET2     17  - 24
+         AIF   (&J GT 24 AND &J LT 33).OFFSET3     25  - 32
+         AIF   (&J GT 32 AND &J LT 41).OFFSET4     33  - 40
+         AIF   (&J GT 40 AND &J LT 49).OFFSET5     41  - 48
+         AIF   (&J GT 48 AND &J LT 57).OFFSET6     49  - 56
+         AIF   (&J GT 56 AND &J LT 65).OFFSET7     57  - 64
+         AIF   (&J GT 64 AND &J LT 73).OFFSET8     65  - 72
+         AIF   (&J GT 72 AND &J LT 81).OFFSET9     73  - 80
+         AIF   (&J GT 80 AND &J LT 89).OFFSETA     81  - 88
+         AIF   (&J GT 88 AND &J LT 97).OFFSETB     89  - 96
+         AIF   (&J GT 96 AND &J LT 105).OFFSETC    97  - 104
+         AIF   (&J GT 104 AND &J LT 113).OFFSETD   105 - 112
+         AIF   (&J GT 112 AND &J LT 121).OFFSETE   113 - 120
+         AIF   (&J GT 120 AND &J LT 129).OFFSETF   121 - 128
+.*
+         MNOTE 12,'INTERNAL ERROR - BAD INDEX VALUE'
+         MEXIT
+.BADFLAG ANOP
+         MNOTE 12,'INCORRECT FLAG VARIABLE NAME'
+         MEXIT
+.*
+.*--------------------------------------------------------------------
+.*
+.*       PLACE THE CORRECT TARGET INTO THE IERCNTL GLOBAL VARIABLE
+.*
+.*--------------------------------------------------------------------
+.*
+.OFFSET0 ANOP
+&IERCNTL SETC  'CPICNTL'
+         AGO   .FINISH
+.OFFSET1 ANOP
+&IERCNTL SETC  'CPICNTL+1'
+         AGO   .FINISH
+.OFFSET2 ANOP
+&IERCNTL SETC  'CPICNTL+2'
+         AGO   .FINISH
+.OFFSET3 ANOP
+&IERCNTL SETC  'CPICNTL+3'
+         AGO   .FINISH
+.OFFSET4 ANOP
+&IERCNTL SETC  'CPICNTL+4'
+         AGO   .FINISH
+.OFFSET5 ANOP
+&IERCNTL SETC  'CPICNTL+5'
+         AGO   .FINISH
+.OFFSET6 ANOP
+&IERCNTL SETC  'CPICNTL+6'
+         AGO   .FINISH
+.OFFSET7 ANOP
+&IERCNTL SETC  'CPICNTL+7'
+         AGO   .FINISH
+.OFFSET8 ANOP
+&IERCNTL SETC  'CPICNTL+8'
+         AGO   .FINISH
+.OFFSET9 ANOP
+&IERCNTL SETC  'CPICNTL+9'
+         AGO   .FINISH
+.OFFSETA ANOP
+&IERCNTL SETC  'CPICNTL+10'
+         AGO   .FINISH
+.OFFSETB ANOP
+&IERCNTL SETC  'CPICNTL+11'
+         AGO   .FINISH
+.OFFSETC ANOP
+&IERCNTL SETC  'CPICNTL+12'
+         AGO   .FINISH
+.OFFSETD ANOP
+&IERCNTL SETC  'CPICNTL+13'
+         AGO   .FINISH
+.OFFSETE ANOP
+&IERCNTL SETC  'CPICNTL+14'
+         AGO   .FINISH
+.OFFSETF ANOP
+&IERCNTL SETC  'CPICNTL+15'
+.FINISH  ANOP
+         MEND
+./ ADD NAME=CPIFLIP  0101-20211-20211-1200-00017-00017-00000-RELEASE 00
+         MACRO
+&LABEL   CPIFLIP  &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN XI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         CPICNTL &FLAGS            PASS FLAGS TO CPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   XI    &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN CPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=CPISETOF 0101-20211-20211-1200-00017-00017-00000-RELEASE 00
+         MACRO
+&LABEL   CPISETOF &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN NI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         CPICNTL &FLAGS            PASS FLAGS TO CPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   NI    &IERCNTL,255-&FLAGS
+.BADFLAG ANOP                     ERRORS ARE FLAGGED IN CPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=CPISETON 0101-20211-20211-1200-00017-00017-00000-RELEASE 00
+         MACRO
+&LABEL   CPISETON &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN OI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         CPICNTL &FLAGS            PASS FLAGS TO CPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   OI    &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN CPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=CPISTORE 0101-20211-20211-1200-00017-00017-00000-RELEASE 00
+         MACRO
+&LABEL   CPISTORE &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN MVI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         CPICNTL &FLAGS            PASS FLAGS TO CPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   MVI   &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN CPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=CPITEST  0101-20211-20211-1200-00017-00017-00000-RELEASE 00
+         MACRO
+&LABEL   CPITEST &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE A TM INSTRUCTION FOR THE FLAGS PROVIDED
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         CPICNTL &FLAGS            PASS FLAGS TO CPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   TM    &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN CPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=IERCCWEQ 0101-20211-20211-1200-00104-00104-00000-RELEASE 00
+         MACRO
+         IERCCWEQ
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       PROVIDE STANDARDIZED EQUATES FOR CCW, CCW FLAGS AND
+.*       CSW STATUS FLAGS
+.*
+.*       THESE CODES ARE USED IN ALL SORT/MERGE MODULES TO
+.*       ENABLE A SOURCE SEARCH FACILITY TO LOCATE ALL USAGE
+.*
+*
+*        CCW COMMAND CODE EQUATES FOR DASD I/O
+*
+TIC      EQU   X'08'               TRANSFER IN CHANNEL
+CCWTIC   EQU   X'08'               TRANSFER IN CHANNEL
+NOOP     EQU   X'03'               NO OPERATION
+CCWNOOP  EQU   X'03'               NO OPERATION
+SEARKEQ  EQU   X'29'               SEARCH KEY EQUAL
+SEARKHE  EQU   X'69'               SEARCH KEY HIGH OR EQUAL
+READHA   EQU   X'1A'               READ HOME ADDRESS
+READR0   EQU   X'16'               READ RECORD 0
+READC    EQU   X'12'               READ COUNT
+READDATA EQU   X'06'               READ DATA
+READKD   EQU   X'0E'               READ KEY AND DATA
+READCKD  EQU   X'1E'               READ COUNT, KEY AND DATA
+SETSECT  EQU   X'23'               SET SECTOR
+READSECT EQU   X'22'               READ SECTOR
+SEARIDEQ EQU   X'31'               SEARCH IDENTIFIER EQUAL
+*
+SENSE    EQU   X'04'               SENSE
+CCWSENSE EQU   X'04'               SENSE
+WRITEDAT EQU   X'05'               WRITE DATA
+WRITEKD  EQU   X'0D'               WRITE KEY AND DATA
+WRITECKD EQU   X'1D'               WRITE COUNT, KEY, AND DATA
+*
+READEVCH EQU   X'64'               READ DEVICE CHARACTERISTICS
+*                                  (64 BYTES)
+READMCKD EQU   X'5E'               READ MULTIPLE COUNT, KEY, AND DATA
+MT       EQU   X'80'               'MULTI-TRACK' USE WITH APPROPRIATE
+CCWMT    EQU   X'80'               'MULTI-TRACK' USE WITH APPROPRIATE
+*                                  OPCODES AS -  CCW   SEARKHE+MT,B,C,D
+*
+*
+*        CCW COMMAND CODE EQUATES FOR TAPE I/O
+*
+WRITET   EQU   X'01'               WRITE
+READFT   EQU   X'02'               READ FORWARD
+READBT   EQU   X'0C'               READ BACKWARDS
+REWINDT  EQU   X'07'               REWIND
+REWINDUT EQU   X'0F'               REWIND UNLOAD
+ERASEGT  EQU   X'17'               ERASE GAP
+WRITETM  EQU   X'1F'               WRITE TAPE MARK
+BSPBT    EQU   X'27'               BACKSPACE BLOCK
+BSPFT    EQU   X'2F'               BACKSPACE FILE
+FSPBT    EQU   X'37'               FORWARD SPACE BLOCK
+FSPFT    EQU   X'3F'               FORWARD SPACE FILE
+*
+*        CCW FLAG EQUATES
+*
+CD       EQU  X'80'                CHAIN DATA
+CCWCD    EQU  X'80'                CHAIN DATA
+CC       EQU  X'40'                CHAIN COMMAND
+CCWCC    EQU  X'40'                CHAIN COMMAND
+SLI      EQU  X'20'                SUPPRESS INCORRECT LENGTH INDICATION
+CCWSLI   EQU  X'20'                SUPPRESS INCORRECT LENGTH INDICATION
+SKIP     EQU  X'10'                SKIP TRANSFER OF DATA
+CCWSKIP  EQU  X'10'                SKIP TRANSFER OF DATA
+*
+*        CSW FLAG EQUATES
+*
+*        UNIT STATUS BYTE
+*
+CUE      EQU   X'20'               CONTROL UNIT END
+CSWCUE   EQU   X'20'               CONTROL UNIT END
+CE       EQU   X'08'               CHANNEL END
+CSWCE    EQU   X'08'               CHANNEL END
+DE       EQU   X'04'               DEVICE END
+CSWDE    EQU   X'04'               DEVICE END
+UC       EQU   X'02'               UNIT CHECK
+CSWUC    EQU   X'02'               UNIT CHECK
+UE       EQU   X'01'               UNIT EXCEPTION
+CSWUE    EQU   X'01'               UNIT EXCEPTION
+*
+*        CHANNEL STATUS BYTE
+*
+PCI      EQU   X'80'               PROGRAM CONTROLLED INTERRUPT
+CSWPCI   EQU   X'80'               PROGRAM CONTROLLED INTERRUPT
+IL       EQU   X'40'               INCORRECT LENGTH
+CSWIL    EQU   X'40'               INCORRECT LENGTH
+PC       EQU   X'20'               PROGRAM CHECK
+CSWPC    EQU   X'20'               PROGRAM CHECK
+PROTC    EQU   X'10'               PROTECTION CHECK
+CSWPROTC EQU   X'10'               PROTECTION CHECK
+CDC      EQU   X'08'               CHANNEL DATA CHECK
+CSWCDC   EQU   X'08'               CHANNEL DATA CHECK
+CCC      EQU   X'04'               CHANNEL CONTROL CHECK
+CSWCCC   EQU   X'04'               CHANNEL CONTROL CHECK
+ICC      EQU   X'02'               INTERFACE CONTROL CHECK
+CSWICC   EQU   X'02'               INTERFACE CONTROL CHECK
+CHK      EQU   X'01'               CHAINING CHECK
+CSWCHK   EQU   X'01'               CHAINING CHECK
+*
+         MEND
+./ ADD NAME=IERENTRY 0101-20211-20211-1200-00055-00055-00000-RELEASE 00
+         MACRO
+&NAME    IERENTRY  &REG=R15,&ID
+.*
+.*       IERENTRY
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE A MODULE EYE CATCHER OF THE SAME FORMAT AS THE
+.*       SAVE MACRO BUT DO NOT SAVE REGISTERS AS SORT/MERGE
+.*       OFTEN DOES NOT PROVIDE FOR THE SAVING OF REGS IN THE
+.*       STANDARD MANNER AND FOR STANDARD MODULE ENTRY
+.*       THE BRANCH REGISTER MAY BE SET TO ANOTHER REGISTER IF
+.*       R15 IS NOT THE ENTRY POINT REGISTER BY USE OF THE
+.*       REG PARAMETER
+.*
+         LCLA  &A,&B,&C
+         LCLC  &E,&F,&G,&H
+         AIF   ('&ID' EQ '').NULLID
+         AIF   ('&ID' EQ '*').SPECID
+         AIF   ('&ID'(1,1) NE '''').NOQUOTE
+&B       SETA  1
+&C       SETA  2
+.NOQUOTE ANOP
+&A       SETA  ((K'&ID+2)/2)*2+4-&C
+*
+&NAME    B     &A.(,&REG)          BRANCH AROUND ID
+&A       SETA  K'&ID-&C
+         DC    AL1(&A)             LENGTH OF IDENTIFIER
+&E       SETC  '&ID'(&B+1,&A)
+         DC    CL&A'&E'                          IDENTIFIER
+         AGO   .CONTA
+.NULLID  ANOP
+&NAME    DS    0H
+         AGO   .CONTA
+.SPECID  AIF   ('&NAME' EQ '').CSECTN
+&E       SETC  '&NAME'
+&A       SETA  1
+.CONTQ   AIF   ('&E'(1,&A) EQ '&E').LEAVE
+&A       SETA  &A+1
+         AGO   .CONTQ
+.LEAVE   ANOP
+&B       SETA  ((&A+2)/2)*2+4
+*
+&NAME    B     &B.(,&REG)          BRANCH AROUND ID
+         DC    AL1(&A)
+         DC    CL&A'&E'            IDENTIFIER
+         AGO   .CONTA
+.CSECTN  AIF   ('&SYSECT' EQ '').E4
+&E       SETC  '&SYSECT'
+&A       SETA  1
+         AGO   .CONTQ
+.E4      IHBERMAC 78,360                    CSECT NAME NULL
+.CONTA   ANOP
+         MEXIT
+         MEND
+./ ADD NAME=IERESTOR 0101-20211-20211-1200-00023-00023-00000-RELEASE 00
+         MACRO
+&NAME    IERESTOR &LIST
+.*
+.*       IERESTOR
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       RETURN PURGED REQUEST QUEUE ELEMENTS TO THE REQUEST QUEUES
+.*
+.*       THE RESTORE MACRO IS NOT DISTRIBUTED WITH MVS 3.8J
+.*       A CUSTOMIZED VERSION OF THE MACRO IS USED FOR SORT/MERGE
+.*       TO ENABLE A DEBUGGING TRACE FACILITY TO BUILT INTO THE
+.*       MACRO AT A LATER TIME IF REQUIRED.
+.*
+*
+*        ISSUE RETURN PURGE REQUEST ELEMENTS SVC
+*
+         AIF   ('&LIST' EQ '').E1
+&NAME    IHBINNRA &LIST            LOAD R1
+         SVC   17                  ISSUE RESTORE SVC
+         MEXIT
+.E1      IHBERMAC 01,150           LIST ADDR MISSING
+         MEND
+./ ADD NAME=IEREXCP  0101-20211-20211-1200-00136-00136-00000-RELEASE 00
+         MACRO
+&NAME    IEREXCP &IOB
+.*
+.*       IEREXCP
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       SORT/MERGE ISSUES THE IEREXCP MACRO TO REQUEST I/O USING
+.*       EXCP TO THE SORTWORK DATA SETS. THIS MACRO PROVIDES A
+.*       TRACING FACILITY FOR THESE EXCP REQUESTS.
+.*
+.*       ANY CHANGES TO THIS MACRO MUST BE COMPATIBLE WITH THE
+.*       EXCP TRACE MODULE IERDTE WHICH WILL BE INVOKED BY THIS
+.*       MACRO IF EXCP TRACING IS REQUESTED.
+.*
+.*       TO MINIMIZE PRODUCTION PROCESSOR OVERHEAD AND TO AVOID
+.*       ADDRESSABILITY ISSUES IN THE SORT/MERGE MODULES THIS MACRO
+.*       PACKS THE CALLING MODULE IDENTIFICATION INTO THE LAST 16
+.*       BITS OF A NOP INSTRUCTION AND USES THE INDEX REGISTER
+.*       POSITION TO PASS THE REGISTER USED TO POINT TO THE IOB.
+.*       R1 IS USED TO BAL INTO THE PPI AS R1 IS ALWAYS USED
+.*       BY THE EXCP MACRO TO POINT TO THE IOB RESULTING IN NO
+.*       CHANGES TO THE CALLERS REGISTERS BEFORE THEY ARE SAVED
+.*       AND LATER RESTORED BY MODULE IERDTE
+.*
+         LCLC &MODULE              LAST 3 BYTES OF CSECT NAME
+         LCLC &BYTE4               VALID CHARS FOR 4 BYTE OF CSECT NAME
+         LCLC &BYTE56              VALID CHARS FOR LAST 2 BYTES
+         LCLA &INDEX4
+         LCLA &INDEX5
+         LCLA &INDEX6
+.*
+.*---------------------------------------------------------------------
+.*
+.*       PACK THE MODULE NAME INTO A NOP INSTRUCTION
+.*
+.*---------------------------------------------------------------------
+.*
+&MODULE  SETC '&SYSECT'(4,3)       LAST 3 CHARS ONLY OF CSECT NAME
+.*
+.*       SORT/MERGE ONLY USES CHARACTERS ABCDR89 AS THE 4TH CHAR
+.*       OF THE MODULE NAME
+.*
+&BYTE4   SETC 'ABCDR89'            THIS STRING MUST NOT EXCEED 16 CHARS
+         AIF  (K'&BYTE4 GT 16).ERROR1   ONLY 16 CHARS SUPPORTED
+.*
+.*       ALL ALPHA AND NUMERIC CHARS ARE SUPPORTED FOR THE
+.*       4TH AND 5TH BYTES OF THE MODULE NAME
+.*
+&BYTE56  SETC 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
+.*
+.*       CHECK IOB VALUE
+.*
+         AIF   ('&IOB' EQ '').E1
+         AIF   ('&IOB' EQ '(1)').E2
+.*
+.*       CONVERT THE 4TH BYTE OF CSECT NAME TO A VALUE
+.*       BETWEEM 0 AND 6
+.*
+&INDEX4  SETA 1
+.LOOP4   ANOP
+         AIF  ('&MODULE'(1,1) EQ '&BYTE4'(&INDEX4,1)).LOOP4X
+&INDEX4  SETA &INDEX4+1
+         AIF  (&INDEX4 GT K'&BYTE4).ERROR4
+         AGO  .LOOP4
+.LOOP4X  ANOP
+&INDEX4  SETA &INDEX4-1
+.*
+.*       CONVERT THE 5TH BYTE OF CSECT NAME TO A VALUE
+.*       BETWEEM 0 AND 63
+.*
+&INDEX5  SETA 1
+.LOOP5   ANOP
+         AIF  ('&MODULE'(2,1) EQ '&BYTE56'(&INDEX5,1)).LOOP5X
+&INDEX5  SETA &INDEX5+1
+         AIF  (&INDEX5 GT K'&BYTE56).ERROR5
+         AGO  .LOOP5
+.LOOP5X  ANOP
+&INDEX5  SETA &INDEX5-1
+.*
+.*       CONVERT THE 5TH BYTE OF CSECT NAME TO A VALUE
+.*       BETWEEM 0 AND 63
+.*
+&INDEX6  SETA 1
+.LOOP6   ANOP
+         AIF  ('&MODULE'(3,1) EQ '&BYTE56'(&INDEX6,1)).LOOP6X
+&INDEX6  SETA &INDEX6+1
+         AIF  (&INDEX6 GT K'&BYTE56).ERROR6
+         AGO  .LOOP6
+.LOOP6X  ANOP
+&INDEX6  SETA &INDEX6-1
+.*
+.*       GENERATE A NOP INSTRUCTION WHERE :-
+.*       BITS 00 - 11 X'470' NOP
+.*            12 - 15 REGISTER USED TO PASS THE ADDR OF IOB
+.*            16 - 19 ENCODED 4TH BYTE OF THE MODULE NAME
+.*            20 - 25 ENCODED 5TH BYTE OF THE MODULE NAME
+.*            26 - 31 ENCODED 6TH BYTE OF THE MODULE NAME
+.*
+.*---------------------------------------------------------------------
+.*
+.*       INVOKE EXCP TRACE
+.*
+.*---------------------------------------------------------------------
+.*
+.*
+         MNOTE *,'       MODULE NAME IER&MODULE ENCODED IN NOP'
+&NAME    DC    0XL4'00',X'47',AL.4(0),AL.4(&IOB),AL.4(&INDEX4),AL.6(&INX
+               DEX5.,&INDEX6)
+         BAS   R1,PPITXEP          BRANCH TO EXCP TRACING MODULE
+.*
+.*---------------------------------------------------------------------
+.*
+.*       RETURN FROM TRACE
+.*
+.*---------------------------------------------------------------------
+.*
+         IHBINNRA &IOB             LOAD REG 1
+*
+*        ISSUE EXCP REQUEST
+*
+         SVC   0                   ISSUE SVC FOR EXCP
+         MEXIT
+.E1      IHBERMAC 01,039           IOB MISSING
+         MEXIT
+.E2      MNOTE 12,'REGISTER 1 MUST NOT VALID FOR IOB ADDRESS'
+         MEXIT
+.ERROR1  MNOTE 12,'MORE THAN 16 CHARS IN 4TH BYTE CHAR STRING'
+         MEXIT
+.ERROR4  MNOTE 12,'INVALID OR UNSUPPORTED 4TH CHAR OF CSECT NAME'
+         MEXIT
+.ERROR5  MNOTE 12,'INVALID OR UNSUPPORTED 5TH CHAR OF CSECT NAME'
+         MEXIT
+.ERROR6  MNOTE 12,'INVALID OR UNSUPPORTED 6TH CHAR OF CSECT NAME'
+         MEXIT
+         MEND
+./ ADD NAME=IERIOB   0101-20211-20211-1200-00044-00044-00000-RELEASE 00
+         MACRO
+         IERIOB
+.*
+.*       IERIOB
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       SORT/MERGE PREFIXES THE IOB WITH THE ACTUAL ECB POINTED
+.*       TO BY IOBECBPB AND AN ADDRESS OF THE ALTERNATE CCW
+.*       STRING. THIS DSECT SUPPORTS THESE FIELDS AND USES THE
+.*       STANDARD IOB MAPPING MACRO IEZIOB TO PROVIDE THE STANDARD
+.*       IOB FIELDS. TO AVOID THE IOB PREFIX INCORRECTLY
+.*       POSITIONING THE STANDARD IOB FIELDS THE ORG *-16
+.*       STATEMENT SETS THE LOCATION COUNTER SO THAT STANDARD IOB
+.*       FIELDS IMMEDIATELY FOLLOW IERALTCW
+.*
+.*       USING ON IERIOB PROVIDES FOR CORRECT ADDRESSABILITY
+.*       WHEN ADDRESSABILITY IS REQUIRED FOR THE ECB AND ALTCW FIELDS
+.*       IOBSTDRD IS THE START OF THE IOB PROPER
+.*
+*
+*        SORT/MERGE PREFIXED IOB
+*
+IERIOBX  DSECT
+         DS    2F                  PADDING TO ALLOW FOR IOB PREFIX
+IERIOB   DS    0F                  NAME FOR USING STATEMENT
+IERECB   DC    A(0)                ECB
+IERALTCW DC    A(0)                ALTERNATE CCW ADDR
+*
+         ORG   *-16
+*
+*        IEZIOB                    STANDARD IOB DSECT
+*
+         PRINT NOGEN
+*
+         IEZIOB DSECT=NO
+*
+         ORG   IOBCSTAT+1
+IOBCSWCT DS    H                   CSW RESIDUAL COUNT
+         ORG
+*
+         PRINT GEN
+*
+         MEND
+./ ADD NAME=IERWAIT  0101-20211-20211-1200-00077-00077-00000-RELEASE 00
+         MACRO
+&NAME    IERWAIT  &CNT,&ECB=,&ECBLIST=,&LONG=NO,&RELATED=
+.*
+.*       IERWAIT
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       SORT/MERGE ISSUES THE IERWAIT MACRO TO WAIT UPON THE
+.*       COMPLETION OF AN EXCP TO THE SORTWORK DATA SETS.
+.*       THIS MACRO PROVIDES A TRACING FACILITY FOR
+.*       THESE WAIT REQUESTS.
+.*
+.*       IT IS A COPY OF THE MVS 3.8J WAIT MACRO MODIFIED TO
+.*       INCLUDE THE LINKAGE TO THE I/O COMPLETION TRACING MODULE
+.*
+.*       ANY CHANGES TO THIS MACRO MUST BE COMPATIBLE WITH THE
+.*       EXCP AND WAIT TRACE MODULE IERDTE WHICH WILL BE INVOKED
+.*       BY THIS MACRO IF WAIT TRACING IS REQUESTED.
+.*
+.*       TO MINIMIZE PRODUCTION PROCESSOR OVERHEAD AND TO AVOID
+.*       ADDRESSABILITY ISSUES IN THE SORT/MERGE MODULES THIS MACRO
+.*       HAS BEEN DESIGNED FOR MINIMUM OVERHEAD IN THE CALLING
+.*       MODULE
+.*
+         AIF   ('&ECB&ECBLIST' EQ '').E1
+         AIF   (T'&ECB NE 'O' AND T'&ECBLIST NE 'O').E2
+         AIF   ('&LONG' NE 'YES' AND '&LONG' NE 'NO').E3
+         AIF   ('&ECB' NE '').CHECK
+         AIF   ('&ECBLIST'(1,1) EQ '(').REG
+         AGO   .CONTD
+.CHECK   AIF   ('&ECB'(1,1) NE '(').CONTD
+.REG     ANOP
+&NAME    LA    1,0(0,&ECB(1)&ECBLIST(1))   CLEAR HIGH BYTE OF REG
+         ST    1,PPITECB-IERRCA(,13)       SAVE ECB (IERIOB) ADDR
+         AIF   ('&CNT' EQ '').CONTF
+         AIF   ('&CNT'(1,1) EQ '(').CONTG
+         LA    0,&CNT.(0,0)                 LOAD PARAMETER REG 0 YM1995
+         AGO   .CONTA
+.CONTD   ANOP
+         AIF   ('&CNT' EQ '&CNT(1)' AND '&CNT' NE '').CONTC
+&NAME    IHBINNRA &ECB&ECBLIST,&CNT         LOAD REG 0 AND REG 1
+         AIF   ('&CNT' NE '').CONTA
+.CONTF   LA    0,1(0,0)                      COUNT OMITTED,1 USED
+         AGO   .CONTA
+.CONTG   ANOP
+         LR    0,&CNT(1)
+         AGO   .CONTA
+.CONTC   ANOP
+&NAME    IHBINNRA &ECB&ECBLIST,&CNT.(0,0)
+.CONTA   AIF   ('&ECBLIST' EQ '').CONTB
+         LCR   1,1                               INDICATE ECBLIST USED
+.CONTB   AIF   ('&LONG' EQ 'NO').CONT        TEST FOR LONG WAIT
+         BCR   8,0                   GIVES AN INLINE '80'
+         ICM   0,8,*-1                 INSERT INTO HI BYTE
+.CONT    SVC   1                                 LINK TO WAIT ROUTINE
+.*
+.*---------------------------------------------------------------------
+.*
+.*       INVOKE TRACE FACILITY
+.*
+.*---------------------------------------------------------------------
+.*
+         BAS   R1,PPITWAI          BRANCH TO I/O WAIT TRACEING MODULE
+.*
+.*---------------------------------------------------------------------
+.*
+.*       EXIT
+.*
+.*---------------------------------------------------------------------
+.*
+         MEXIT
+.E1      IHBERMAC 11                        ECB AND ECBLIST MISSING
+         MEXIT
+.E2      IHBERMAC 54,,'ECB=&ECB AND ECBLIST=&ECBLIST'
+         MEXIT
+.E3      IHBERMAC 1001,LONG,&LONG        INVALID LONG PARAMETER
+         MEND
+./ ADD NAME=IEZREGS  0101-20211-20211-1200-00028-00028-00000-RELEASE 00
+         MACRO
+         IEZREGS &DUMMY
+         GBLA  &DEFREGS
+         AIF   (&DEFREGS EQ 1).NOGEN   FLAG ON ? BYPASS EQUATES
+.*
+R0       EQU   0
+R1       EQU   1
+R2       EQU   2
+R3       EQU   3
+R4       EQU   4
+R5       EQU   5
+R6       EQU   6
+R7       EQU   7
+R8       EQU   8
+R9       EQU   9
+R10      EQU   10
+R11      EQU   11
+R12      EQU   12
+R13      EQU   13
+R14      EQU   14
+R15      EQU   15
+.*
+.*       EQUATES GENERATED, TURN ON DEFREGS FLAG TO PREVENT
+.*       DUPLICATE EQUATES BEING GENERATED BY OTHER CALLS
+.*
+&DEFREGS SETA  1
+.NOGEN   ANOP
+         MEND
+./ ADD NAME=PPICNTL  0101-20211-20211-1200-00302-00302-00000-RELEASE 00
+         MACRO
+         PPICNTL &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       AN INTERNAL MACRO CALLED BY -
+.*       PPITEST, PPISETON, PPISETOF, PPIFLIP
+.*       TO DETERMINE THE TARGET BYTE IN THE PPICNTL FIELD
+.*       IN THE PPI BASED ON THE NAME OF THE INDICATOR BIT(S)
+.*       PASSED IN FLAGS
+.*
+.*       NOTE -
+.*       ANY CHANGES TO THE PPI FLAGS MAPPED IN SMPPI MUST
+.*       BE REFLECTED IN THIS MACRO
+.*
+.*       THE CORRECT TARGET OF A TM, OI, NI OR XI INSTRUCTION
+.*       WILL BE RETURNED IN THE GLOBAL VARIABLE IERCNTL
+.*
+.*       DECLARE LCLS
+.*
+         LCLA  &I                      LOOP VARIABLE
+         LCLA  &J                      LOOP VARIABLE
+         LCLA  &LENFLAG                LENGTH OF FLAGS STRING
+         LCLC  &NAMES(128)             TABLE OF FLAG FIELD NAMES
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         AIF   (K'&FLAGS GT 3).OK
+         MNOTE 12,'FLAG FIELD(S) NOT PROVIDED'
+         MEXIT
+.OK      ANOP
+.*
+.*--------------------------------------------------------------------
+.*
+.*       INITIALIZE NAMES WITH FLAG NAMES ASSIGNED BY THE SMPPI MACRO
+.*
+.*       NOTE ANY CHANGES TO THE PPI FLAGS MAPPED IN SMPPI MUST
+.*       BE REFLECTED IN THIS MACRO
+.*
+.*--------------------------------------------------------------------
+.*
+.*                                 +0
+&NAMES(1)   SETC 'PPIFIX'
+&NAMES(2)   SETC 'PPIVAR'
+&NAMES(3)   SETC 'PPISCF'
+&NAMES(4)   SETC 'PPIMCF'
+&NAMES(5)   SETC 'PPIBALN'
+&NAMES(6)   SETC 'PPIPOLY'
+&NAMES(7)   SETC 'PPIOSC'
+&NAMES(8)   SETC 'PPI8WAY'         +1
+.*
+&NAMES(9)   SETC 'PPI16WAY'
+&NAMES(10)  SETC 'PPITAPE'
+&NAMES(11)  SETC 'PPIDISK'
+&NAMES(12)  SETC 'PPINODC'
+&NAMES(13)  SETC 'PPINODCI'
+&NAMES(14)  SETC 'PPINODCO'
+&NAMES(15)  SETC 'PPINOMOD'
+&NAMES(16)  SETC 'PPIMODS'
+.*                                 +2
+&NAMES(17)  SETC 'PPILE256'
+&NAMES(18)  SETC 'PPIGT256'
+&NAMES(19)  SETC 'PPISKIP'
+&NAMES(20)  SETC 'PPIPH1'
+&NAMES(21)  SETC 'PPIPH2'
+&NAMES(22)  SETC 'PPIPH3'
+&NAMES(23)  SETC 'PPIMERGO'
+&NAMES(24)  SETC 'PPICHKPT'
+.*                                 +3
+&NAMES(25)  SETC 'PPIEQUAL'
+&NAMES(26)  SETC 'PPIEXTRT'
+&NAMES(27)  SETC 'PPIUOSEQ'
+&NAMES(28)  SETC 'PPIPH1CO'
+&NAMES(29)  SETC 'PPIDMCO'
+&NAMES(30)  SETC 'PPIATT'
+&NAMES(31)  SETC 'PPIFSZE'
+&NAMES(32)  SETC 'PPIPEOF'
+.*                                 +4
+&NAMES(33)  SETC 'PPIETCF'
+&NAMES(34)  SETC 'PPISCARD'
+&NAMES(35)  SETC 'PPIMCARD'
+&NAMES(36)  SETC 'PPIRCARD'
+&NAMES(37)  SETC 'PPIMODCD'
+&NAMES(38)  SETC 'PPIEXSYS'
+&NAMES(39)  SETC 'PPIDWA'
+&NAMES(40)  SETC 'PPISWA'
+.*                                 +5
+&NAMES(41)  SETC 'PPIREADE'
+&NAMES(42)  SETC 'PPIWRITE'
+&NAMES(43)  SETC 'PPIEVNOD'
+&NAMES(44)  SETC 'PPIMPSE1'
+&NAMES(45)  SETC 'PPIMPSEN'
+&NAMES(46)  SETC 'PPIINWRK'
+&NAMES(47)  SETC 'PPITAU'
+&NAMES(48)  SETC 'PPINCHAN'
+.*                                 +6
+&NAMES(49)  SETC 'PPIDEBB'
+&NAMES(50)  SETC 'PPIREADF'
+&NAMES(51)  SETC 'PPICLOSR'
+&NAMES(52)  SETC 'PPIBLKF'
+&NAMES(53)  SETC 'PPIREADB'
+&NAMES(54)  SETC 'PPI2301'
+&NAMES(55)  SETC 'PPI2314'
+&NAMES(56)  SETC 'PPIF56 '
+.*                                 +7
+&NAMES(57)  SETC 'PPIUEOF'
+&NAMES(58)  SETC 'PPIRMAXR'
+&NAMES(59)  SETC 'PPIUIIP'
+&NAMES(60)  SETC 'PPI7TRK'
+&NAMES(61)  SETC 'PPICRCX'
+&NAMES(62)  SETC 'PPI2311'
+&NAMES(63)  SETC 'PPIVALCT'
+&NAMES(64)  SETC 'PPIACCPT'
+.*                                 +8
+&NAMES(65)  SETC 'PPISTOPF'
+&NAMES(66)  SETC 'PPIDYNA'
+&NAMES(67)  SETC 'PPIDYNI'
+&NAMES(68)  SETC 'PPIEQUO'
+&NAMES(69)  SETC 'PPIERET'
+&NAMES(70)  SETC 'PPIESTA'
+&NAMES(71)  SETC 'PPIECHK'
+&NAMES(72)  SETC 'PPIFSEX'
+.*                                 +9
+&NAMES(73)  SETC 'PPILIST'
+&NAMES(74)  SETC 'PPIRSET'
+&NAMES(75)  SETC 'PPISMFR'
+&NAMES(76)  SETC 'PPISMFL'
+&NAMES(77)  SETC 'PPILIBS'
+&NAMES(78)  SETC 'PPIMAXS'
+&NAMES(79)  SETC 'PPIABMSG'
+&NAMES(80)  SETC 'PPIF80'
+.*                                 +10
+&NAMES(81)  SETC 'PPICALL'
+&NAMES(82)  SETC 'PPICCRT'
+&NAMES(83)  SETC 'PPIPALL'
+&NAMES(84)  SETC 'PPIPCRT'
+&NAMES(85)  SETC 'PPIOSTMT'
+&NAMES(86)  SETC 'PPIDSTMT'
+&NAMES(87)  SETC 'PPIVSEQ'
+&NAMES(88)  SETC 'PPICHCK'
+.*                                 +11
+&NAMES(89)  SETC 'PPIDIAG'
+&NAMES(90)  SETC 'PPIDSIM'
+&NAMES(91)  SETC 'PPITEXCP'
+&NAMES(92)  SETC 'PPITWAIT'
+&NAMES(93)  SETC 'PPITMODF'
+&NAMES(94)  SETC 'PPITSCPI'
+&NAMES(95)  SETC 'PPITSPPI'
+&NAMES(96)  SETC 'PPITBRKP'
+.*                                 +12
+&NAMES(97)  SETC 'PPIME11'
+&NAMES(98)  SETC 'PPIME15'
+&NAMES(99)  SETC 'PPIME16'
+&NAMES(100) SETC 'PPIME17'
+&NAMES(101) SETC 'PPIME18'
+&NAMES(102) SETC 'PPIME21'
+&NAMES(103) SETC 'PPIME25'
+&NAMES(104) SETC 'PPIME27'
+.*                                 +13
+&NAMES(105) SETC 'PPIME28'
+&NAMES(106) SETC 'PPIME31'
+&NAMES(107) SETC 'PPIME35'
+&NAMES(108) SETC 'PPIME37'
+&NAMES(109) SETC 'PPIME38'
+&NAMES(110) SETC 'PPIME61'
+&NAMES(111) SETC 'PPIME19'
+&NAMES(112) SETC 'PPIME29'
+.*                                 +14
+&NAMES(113) SETC 'PPIME39'
+&NAMES(114) SETC 'PPIMER1'
+&NAMES(115) SETC 'PPIMER2'
+&NAMES(116) SETC 'PPIMER3'
+&NAMES(117) SETC 'PPIMER4'
+&NAMES(118) SETC 'PPIMER5'
+&NAMES(119) SETC 'PPIMVSI'
+&NAMES(120) SETC 'PPIMVSO'
+.*                                 +15
+&NAMES(121) SETC 'PPIF121'
+&NAMES(122) SETC 'PPIF122'
+&NAMES(123) SETC 'PPIF123'
+&NAMES(124) SETC 'PPIF124'
+&NAMES(125) SETC 'PPIF125'
+&NAMES(126) SETC 'PPIF126'
+&NAMES(127) SETC 'PPIF127'
+&NAMES(128) SETC 'PPIF128'
+.*
+&LENFLAG SETA K'&FLAGS
+&IERCNTL SETC  ''
+.*
+&I       SETA  0                   SET LOOP VARIABLE
+.LOOP    ANOP                      LOOK FOR A + OR - SEPARATOR
+&I       SETA  &I+1                INCREMENT POINTER
+         AIF   ('&FLAGS'(&I,1) EQ '+' OR '&FLAGS'(&I,1) EQ '-').SEP
+         AIF   (&I NE &LENFLAG).LOOP
+         AGO   .NOSIGN
+.SEP     ANOP                      SEPARATOR LOCATED
+&I       SETA  &I-1                I = LENGTH OF FIRST OR ONLY FIELD
+.NOSIGN  ANOP
+.*
+.*       THE CODE HERE SHOULD BE ENHANCED TO CHECK IF EACH AND
+.*       EVERY VARIABLE NAME IN FLAGS IS VALID AND ALL VARIABLES
+.*       APPLY TO THE SAME BYTE IN PPICNTL
+.*       HOWEVER AS ALL THE VARIABLE NAMES WERE PROGRAM
+.*       GENERATED THERE ARE NO ERRORS AT THIS TIME
+.*
+.*--------------------------------------------------------------------
+.*
+.*       SCAN THROUGH THE NAMES ARRAY TO FIND A MATCH WITH THE
+.*       NAME OF THE FIRST VARIABLE
+.*
+.*       WHEN A MATCH IS FOUND BRANCH TO GENERATE THE CORRECT
+.*       TARGET VARIABLE
+.*
+.*--------------------------------------------------------------------
+.*
+&J       SETA  1                   J IS THE INDEX FOR NAMES
+.LOOPA   ANOP
+         AIF   ('&NAMES(&J)' EQ '&FLAGS'(1,&I)).VARFIND
+&J       SETA  &J+1                INCREMENT POINTER
+         AIF   (&J GT 128).BADFLAG
+         AGO   .LOOPA
+.VARFIND ANOP                      FLAG - NAMES MATCH
+         AIF   (&J GT 0  AND &J LT 9).OFFSET0      1   -  8
+         AIF   (&J GT 8  AND &J LT 17).OFFSET1     9   - 16
+         AIF   (&J GT 16 AND &J LT 25).OFFSET2     17  - 24
+         AIF   (&J GT 24 AND &J LT 33).OFFSET3     25  - 32
+         AIF   (&J GT 32 AND &J LT 41).OFFSET4     33  - 40
+         AIF   (&J GT 40 AND &J LT 49).OFFSET5     41  - 48
+         AIF   (&J GT 48 AND &J LT 57).OFFSET6     49  - 56
+         AIF   (&J GT 56 AND &J LT 65).OFFSET7     57  - 64
+         AIF   (&J GT 64 AND &J LT 73).OFFSET8     65  - 72
+         AIF   (&J GT 72 AND &J LT 81).OFFSET9     73  - 80
+         AIF   (&J GT 80 AND &J LT 89).OFFSETA     81  - 88
+         AIF   (&J GT 88 AND &J LT 97).OFFSETB     89  - 96
+         AIF   (&J GT 96 AND &J LT 105).OFFSETC    97  - 104
+         AIF   (&J GT 104 AND &J LT 113).OFFSETD   105 - 112
+         AIF   (&J GT 112 AND &J LT 121).OFFSETE   113 - 120
+         AIF   (&J GT 120 AND &J LT 129).OFFSETF   121 - 128
+.*
+         MNOTE 12,'INTERNAL ERROR - BAD INDEX VALUE'
+         MEXIT
+.BADFLAG ANOP
+         MNOTE 12,'INCORRECT FLAG VARIABLE NAME'
+         MEXIT
+.*
+.*--------------------------------------------------------------------
+.*
+.*       PLACE THE CORRECT TARGET INTO THE IERCNTL GLOBAL VARIABLE
+.*
+.*--------------------------------------------------------------------
+.*
+.OFFSET0 ANOP
+&IERCNTL SETC  'PPICNTL'
+         AGO   .FINISH
+.OFFSET1 ANOP
+&IERCNTL SETC  'PPICNTL+1'
+         AGO   .FINISH
+.OFFSET2 ANOP
+&IERCNTL SETC  'PPICNTL+2'
+         AGO   .FINISH
+.OFFSET3 ANOP
+&IERCNTL SETC  'PPICNTL+3'
+         AGO   .FINISH
+.OFFSET4 ANOP
+&IERCNTL SETC  'PPICNTL+4'
+         AGO   .FINISH
+.OFFSET5 ANOP
+&IERCNTL SETC  'PPICNTL+5'
+         AGO   .FINISH
+.OFFSET6 ANOP
+&IERCNTL SETC  'PPICNTL+6'
+         AGO   .FINISH
+.OFFSET7 ANOP
+&IERCNTL SETC  'PPICNTL+7'
+         AGO   .FINISH
+.OFFSET8 ANOP
+&IERCNTL SETC  'PPICNTL+8'
+         AGO   .FINISH
+.OFFSET9 ANOP
+&IERCNTL SETC  'PPICNTL+9'
+         AGO   .FINISH
+.OFFSETA ANOP
+&IERCNTL SETC  'PPICNTL+10'
+         AGO   .FINISH
+.OFFSETB ANOP
+&IERCNTL SETC  'PPICNTL+11'
+         AGO   .FINISH
+.OFFSETC ANOP
+&IERCNTL SETC  'PPICNTL+12'
+         AGO   .FINISH
+.OFFSETD ANOP
+&IERCNTL SETC  'PPICNTL+13'
+         AGO   .FINISH
+.OFFSETE ANOP
+&IERCNTL SETC  'PPICNTL+14'
+         AGO   .FINISH
+.OFFSETF ANOP
+&IERCNTL SETC  'PPICNTL+15'
+.FINISH  ANOP
+         MEND
+./ ADD NAME=PPIFLIP  0101-20211-20211-1200-00018-00018-00000-RELEASE 00
+         MACRO
+&LABEL   PPIFLIP  &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN XI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         PPICNTL &FLAGS            PASS FLAGS TO PPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   XI    &IERCNTL,&FLAGS
+.BADFLAG ANOP                     ERRORS ARE FLAGGED IN PPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=PPISETOF 0101-20211-20211-1200-00018-00018-00000-RELEASE 00
+         MACRO
+&LABEL   PPISETOF &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN NI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         PPICNTL &FLAGS            PASS FLAGS TO PPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   NI    &IERCNTL,255-&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN PPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=PPISETON 0101-20211-20211-1200-00018-00018-00000-RELEASE 00
+         MACRO
+&LABEL   PPISETON &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE AN OI INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         PPICNTL &FLAGS            PASS FLAGS TO PPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   OI    &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN PPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=PPITEST  0101-20211-20211-1200-00018-00018-00000-RELEASE 00
+         MACRO
+&LABEL   PPITEST &FLAGS
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       GENERATE A TM INSTRUCTION FOR THE FLAGSTR PROVIDED
+.*
+.*
+.*       DECLARE GBLS
+.*
+         GBLC  &IERCNTL
+.*
+         PPICNTL &FLAGS            PASS FLAGS TO PPICNTL FOR VALIDATION
+         AIF   (K'&IERCNTL EQ 0).BADFLAG    INVALID FLAGS ?
+&LABEL   TM    &IERCNTL,&FLAGS
+.BADFLAG ANOP                      ERRORS ARE FLAGGED IN PPICNTL
+         MEXIT
+         MEND
+./ ADD NAME=RMAMAIN  0101-20211-20211-1200-00045-00045-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        RMAMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER045   DC    A(IER045T)
+         DC    A(L'IER045T)
+*
+IER046   DC    A(IER046T)
+         DC    A(L'IER046T)
+*
+IER047   DC    A(IER047T)
+         DC    A(IER047X-IER047T)
+*
+IER048   DC    A(IER048T)
+         DC    A(L'IER048T)
+*
+IER049   DC    A(IER049T)
+         DC    A(L'IER049T)
+*
+IER066   DC    A(IER066T)
+         DC    A(L'IER066T+L'IER066A)
+*
+IER045T  DC    C'IER045I End of Sort Phase'
+*
+IER046T  DC    C'IER046A Sort capacity exceeded'
+*
+IER047T  DC    C'IER047A Record Count Error, In -'
+IER047I  DC    XL8'4020202020202020'   ZERO SUPPRESS EDIT PATTERN
+         DC    C', Out -'
+IER047O  DC    XL8'4020202020202020'   ZERO SUPPRESS EDIT PATTERN
+IER047X  EQU   *
+*
+IER048T  DC    C'IER048I Estimated Maximum Record capacity (Nmax) exceeX
+               ded'
+*
+IER049T  DC    C'IER049I Skip Merge Phase'
+*
+IER066T  DC    C'IER066A Approximate Record Count -'
+IER066A  DC    XL8'4020202020202020'   ZERO SUPPRESS EDIT PATTERN
+*
+./ ADD NAME=RMBMAIN  0101-20211-20211-1200-00039-00039-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        RMBMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER046   DC    A(IER046T)
+         DC    A(L'IER046T)
+*
+IER047   DC    A(IER047T)
+         DC    A(IER047X-IER047T)
+*
+IER050   DC    A(IER050T)
+         DC    A(L'IER050T)
+*
+IER051   DC    A(IER051T)
+         DC    A(L'IER051T)
+*
+IER066   DC    A(IER066T)
+         DC    A(L'IER066T+L'IER066A)
+*
+IER046T  DC    C'IER046A SORT capacity exceeded'
+*
+IER047T  DC    C'IER047A Record Count Error, In -'
+IER047I  DC    XL8'4020202020202020'
+         DC    C', Out -'
+IER047O  DC    XL8'4020202020202020'
+IER047X  EQU   *
+*
+IER050T  DC    C'IER050I End of Merge Phase'
+*
+IER051T  DC    C'IER051A Unending Merge'
+*
+IER066T  DC    C'IER066A Approximate Record Count -'
+IER066A  DC    XL8'4020202020202020'
+*
+./ ADD NAME=RMCMAIN  0101-20211-20211-1200-00062-00062-00000-RELEASE 00
+*
+*----------------------------------------------------------------------
+*
+*        RMCMAIN
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*----------------------------------------------------------------------
+*
+IER047   DC    A(IER047T)
+         DC    A(L'IER047T)
+*
+IER052   DC    A(IER052T)
+         DC    A(L'IER052T)
+*
+IER053   DC    A(IER053T)
+         DC    A(L'IER053T)
+*
+IER053D  DC    A(IER053DT)
+         DC    A(IER053DX-IER053DT)
+*
+IER054   DC    A(IER054T)
+         DC    A(IER054X-IER054T)
+*
+IER055   DC    A(IER055T)
+         DC    A(IER055X-IER055T)
+*
+IER063   DC    A(IER063T)
+         DC    A(L'IER063T+L'IER063A)
+*
+IER068   DC    A(IER068T)
+         DC    A(L'IER068T+L'IER068A)
+*
+IER047T  DC    C'IER047A Record Count Error'
+*
+IER052T  DC    C'IER052I End of Sort'
+*
+IER053T  DC    C'IER053A Out of Sequence Error'
+*
+IER053DT DC    C'IER053I '
+IER053DS DC    C'Out Buffer '     or   'From Merge '
+IER053DD DC    CL40' '
+IER053DX EQU   *
+*
+IER054T  DC    C'IER054I Records In'
+IER054I  DC    CL8' '
+         DC    C', Records Out'
+IER054O  DC    CL8' '
+IER054X  EQU   *
+*
+IER055T  DC    C'IER055I Records Inserted'
+IER055I  DC    CL8' '
+         DC    C', Records Deleted'
+IER055D  DC    CL8' '
+IER055X  EQU   *
+*
+IER063T  DC    C'IER063A OPEN Error - '
+IER063A  DC    CL8' '
+*
+IER068T  DC    C'IER068A Out of Sequence in SORTIN'
+IER068A  DC    C'  '
+*
+./ ADD NAME=SMCPI    0101-20211-20211-1200-00402-00402-00000-RELEASE 00
+         MACRO
+         SMCPI  &LIST=NO
+         AIF   ('&LIST' EQ 'YES').LAB1    LISTING REQUESTED ?
+         PUSH   PRINT
+         PRINT  OFF
+.LAB1    ANOP
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*        SMCPI
+*
+*        SORT CONTROL PHASE INFO AREA (CPIA) - SORT/MERGE
+*
+*        COMMUNICATION PARAMETERS THAT ARE NEEDED BY THE GENERAL
+*        ASSIGNMENT ROUTINES
+*
+.*       THE CPI IS GETMAINED BY IERRCO AND FREEMAINED BY IERRCZ
+.*       THE DATA COLLECTED AND STORED IN THE CPI IS MOVED TO THE PPI
+.*       BY IERRC1
+.*
+.*       NOTE -
+.*       ANY CHANGES TO FLAG NAMES MUST BE REFLECTED IN THE
+.*       CPICNTL MACRO
+.*
+IERRC5   DSECT
+*
+*        IEZBITS
+*
+         IEZBITS
+*
+CPISAVE  DC    18F'0'              SAVE AREA
+CPIEYEC  DC    CL8'CPIA'           EYE CATCHER
+*
+*        VERSION IDENTIFICATION
+*
+CPIVER   DC    CL4' '              PROVIDED BY IERAM1
+*
+CPINUMCF DC    XL2'0'              NUMBER OF CONTROL FIELDS
+CPIPCF01 DC    XL72'0'             CONTROL FIELD INFORMATION
+*
+*        CONTROL FLAGS
+*
+CPICNTL  DC    XL16'0'
+*                            +0
+CPIFIX   EQU   BIT0                 1. FIXED LENGTH RECORDS
+CPIVAR   EQU   BIT1                 2. VARIABLE LENGTH RECORDS
+CPISCF   EQU   BIT2                 3. SINGLE CONTROL FIELD
+CPIMCF   EQU   BIT3                 4. MULTIPLE CONTROL FIELDS
+CPIBALN  EQU   BIT4                 5. BALANCED
+CPIPOLY  EQU   BIT5                 6. POLYPHASE
+CPIOSC   EQU   BIT6                 7. OSCILLATING
+CPI8WAY  EQU   BIT7                 8. 1 TO 8
+*                            +1
+CPI16WAY EQU   BIT0                 9. 1 TO 16
+CPITAPE  EQU   BIT1                10. TAPE
+CPIDISK  EQU   BIT2                11. DISK/2311
+CPINODC  EQU   BIT3                12. NO DATA CHAINING
+CPINODCI EQU   BIT4                13. DATA CHAINING INPUT
+CPINODCO EQU   BIT5                14. DATA CHAINING OUTPUT
+CPINOMOD EQU   BIT6                15. NO MODS
+CPIMODS  EQU   BIT7                16. MODS
+*                            +2
+CPILE256 EQU   BIT0                17. LRECL < 256
+CPIGT256 EQU   BIT1                18. LRECL > 256
+CPISKIP  EQU   BIT2                19. SKIP RECORD OPTION
+CPIPH1   EQU   BIT3                20. PHASE 1
+CPIPH2   EQU   BIT4                21. PHASE 2
+CPIPH3   EQU   BIT5                22. PHASE 3
+CPIMERGO EQU   BIT6                23. MERGE ONLY
+CPICHKPT EQU   BIT7                24. CHECKPOINT
+*                            +3
+CPIEQUAL EQU   BIT0                25. EQUALS - NOT USER OPTION
+CPIEXTRT EQU   BIT1                26. EXTRACT
+CPIUOSEQ EQU   BIT2                27. USER'S OUTPUT SEQUENCE
+CPIPH1CO EQU   BIT3                28. PHASE 1 COLLATING ORDER OR
+*                                      MERGE INPUT ORDER
+CPIDMCO  EQU   BIT4                29. DISK MERGE TABLE COLLATING ORDER
+CPIATT   EQU   BIT5                30. ATTACHED, LINKED OR XCTLED
+CPIFSZE  EQU   BIT6                31. FILESIZE ESTIMATED VALUE
+CPIPEOF  EQU   BIT7                32. ASSGN OR RUNNING PROGRAM EOF
+*                            +4
+CPIETCF  EQU   BIT0                33. E-TYPE CONTROL FIELDS PRESENT
+CPISCARD EQU   BIT1                34. SORT STMT PRESENT
+CPIMCARD EQU   BIT2                35. MERGE STMT PRESENT
+CPIRCARD EQU   BIT3                36. RECORD STMT PRESENT
+CPIMODCD EQU   BIT4                37. MODS STMT PRESENT
+CPIEXSYS EQU   BIT5                38. EXEC SYSTEM SEARCH - NOT USED
+CPIDWA   EQU   BIT6                39. DOUBLE WORD ALIGNMENT FOR BUFS
+CPISWA   EQU   BIT7                40. SINGLE WORD ALIGNMENT FOR BUFS
+*                            +5
+CPIREADE EQU   BIT0                41. READ ERROR FLAG
+CPIWRITE EQU   BIT1                42. WRITE ERROR FLAG
+CPIEVNOD EQU   BIT2                43. EVEN/ODD SWITCH FOR BALANCED
+*                                  44  AND 45
+CPIMP    EQU   BIT3+BIT4               00 - 1 MPLX
+CPIMPSE1 EQU   BIT3                    01 - 1 MPLX + 1 SEL OR 1 SEL
+CPIMPSEN EQU   BIT4                    10 - 1 MPLX + N SEL OR N SEL
+CPIINWRK EQU   BIT5                46. INPUT A WORK UNIT
+CPITAU   EQU   BIT6                47. SWITCH OR TAU
+CPINCHAN EQU   BIT7                48. N CHANNEL ENVIRONMENT
+*                            +6
+CPIDEBB  EQU   BIT0                49. DEBLOCK BACKWARD
+*                                      SET BY ALG, USED BY SORT DEF
+CPIREADF EQU   BIT1                50. READ FORWARD
+*                                      SET BY ALG, USED BY SORT DEF
+CPICLOSR EQU   BIT2                51. CLOSE WITH REWIND
+*                                      SET BY ALG, USED BY EOP
+CPIBLKF  EQU   BIT3                52. BLOCK FORWARD
+*                                      SET BY ALG, USED BY SORT DEF
+CPIREADB EQU   BIT4                53. READ FORWARD LATER
+*                                      SET BY ALG, USED BY ALG
+CPI2301  EQU   BIT5                54. 2301 DRUM - NOT USED
+CPI2314  EQU   BIT6                55. 2314 DISK
+*        EQU   BIT7                56. RESERVED
+*                            +7
+CPIUEOF  EQU   BIT0                57. USER EOF (OSC/2314), SET BY
+*                                      DEBLOCK, USED BY ALG
+CPIRMAXR EQU   BIT1                58. RMAX REACHED (DCS ONLY) SET BY
+*                                      DEBLOCK, USED BY ALG
+CPIUIIP  EQU   BIT2                59. USER INSERT IN PROCESS -OSC/2314
+*                                      SET BY BLOCK, USED BY ALG
+CPI7TRK  EQU   BIT3                60. TRACK TAPE
+*                                      0=9 TRK
+*                                      1=7 TRK OR 7-9 MIX
+CPICRCX  EQU   BIT4                61. CRCX TECH HAS BEEN REQUESTED
+CPI2311  EQU   BIT5                62. 2311'S USING CRCX TECH
+CPIVALCT EQU   BIT6                63. VALUE COUNT OF 256 FOR FIELDS
+*                                      PARAMETER - SET BY -RCD FOR -RCE
+*                                      LATER USED BY RCN TO INDICATE
+*                                      BALN TECH ON 2314 - 1=YES,0=NO
+CPIACCPT EQU   BIT7                64. ACCEPT/SKIP OPTION ACTIVATED -
+*                                      READ I/O ERROR TO -RCV INTERFACE
+*                            +8
+CPISTOPF EQU   BIT0                65. STOP AFTER RECORD COUNT OPTION
+CPIDYNA  EQU   BIT1                66. DYNAUTO = YES
+CPIDYNI  EQU   BIT2                67. DYNAUTO = IGNWKDD
+CPIEQUO  EQU   BIT3                68. EQUALS = YES
+CPIERET  EQU   BIT4                69. ERET = ABEND
+CPIESTA  EQU   BIT5                70. ESTAE = YES
+CPIECHK  EQU   BIT6                71. EXITCK = STRONG
+CPIFSEX  EQU   BIT7                72. FSZEST = YES EXACT
+*                            +9
+CPILIST  EQU   BIT0                73. LIST = YES
+CPIRSET  EQU   BIT1                74. RESET = YES
+CPISMFR  EQU   BIT2                75. SMF = YES
+CPISMFL  EQU   BIT3                76. SMF = FULL
+CPILIBS  EQU   BIT4                77. SORTLIB = SYSTEM
+CPIMAXS  EQU   BIT5                78. SIZE/MAINSIZE/CORE=MAX
+CPIABMSG EQU   BIT6                79. USE MSG NO FOR ABEND
+*        EQU   BIT7                80. RESERVED
+*                            +10
+CPICALL  EQU   BIT0                81. ALL MESSAGES TO THE CONSOLE
+CPICCRT  EQU   BIT1                82. CRITICAL MESSAGES TO THE CONSOLE
+CPIPALL  EQU   BIT2                83. ALL MESSAGES TO THE PRINTER
+CPIPCRT  EQU   BIT3                84. CRITICAL MESSAGES TO THE PRINTER
+CPIOSTMT EQU   BIT4                85. OPTION STATEMENT PRESENT
+CPIDSTMT EQU   BIT5                86. DEBUG STATEMENT PRESENT
+CPIVSEQ  EQU   BIT6                87. VERIFY=YES FOR SEQUENCE CHECK
+CPICHCK  EQU   BIT7                88. CHECK=YES FOR RECORD COUNT
+*                            +11
+CPIDIAG  EQU   BIT0                89. DIAGNOSTICS ON SORTDIAG
+CPIDSIM  EQU   BIT1                90. DIAGSIM = YES (DIAGS ON SYSOUT)
+CPITEXCP EQU   BIT2                91. TRACE EXCP
+CPITWAIT EQU   BIT3                92. TRACE COMPLETION OF EXCP AT WAIT
+CPITMODF EQU   BIT4                93. TRACE MODULE FLOW
+CPITSCPI EQU   BIT5                94. SNAP THE CPI AND CNTL STMT AREA
+CPITSPPI EQU   BIT6                95. SNAP THE PPI (NOT TESTED IN CPI)
+CPITBRKP EQU   BIT7                96. EXECUTE BREAKPOINTS
+*
+*        EXIT MODIFICATION FLAGS
+*        SET BY IERRCH FROM MODS CONTROL STATEMENT
+*
+*                            +12
+CPIME11  EQU   BIT0                97. E11
+CPIME15  EQU   BIT1                98. E15
+CPIME16  EQU   BIT2                99. E16
+CPIME17  EQU   BIT3               100. E17
+CPIME18  EQU   BIT4               101. E18
+CPIME21  EQU   BIT5               102. E21
+CPIME25  EQU   BIT6               103. E25
+CPIME27  EQU   BIT7               104. E27
+*                            +13
+CPIME28  EQU   BIT0               105. E28
+CPIME31  EQU   BIT1               106. E31
+CPIME35  EQU   BIT2               107. E35
+CPIME37  EQU   BIT3               108. E37
+CPIME38  EQU   BIT4               109. E38
+CPIME61  EQU   BIT5               110. E61
+CPIME19  EQU   BIT6               111. E19
+CPIME29  EQU   BIT7               112. E29
+*                            +14
+CPIME39  EQU   BIT0               113. E39
+CPIMER1  EQU   BIT1               114.       RESERVED
+CPIMER2  EQU   BIT2               115.          ..
+CPIMER3  EQU   BIT3               116.          ..
+CPIMER4  EQU   BIT4               117.          ..
+CPIMER5  EQU   BIT5               118.          ..
+CPIMVSI  EQU   BIT6               119. RECFM=VBS ON INPUT
+CPIMVSO  EQU   BIT7               120. RECFM=VBS ON OUTPUT
+*                            +15
+*                                 121.       RESERVED
+*                                 122.          ..
+*                                 123.          ..
+*                                 124.          ..
+*                                 125.          ..
+*                                 126.          ..
+*                                 127.          ..
+*                                 128.          ..
+*
+CPILAB09 DS    0XL4
+         DC    X'00'               NUMBER OF PHASE 2 OUTPUT BUFFERS
+         DC    X'00'               NUMBER OF PHASE 3 OUTPUT BUFFERS
+         DC    XL2'0000'           QSAM OUTPUT BUFFER LENGTH
+CPIDVCT  DC    A(0)                -> DASD DEVICE ENTRY IN IECZDTAB
+*                                     FOR SORTWORK UNITS. SET BY IERRCI
+CPINWKU  DC    XL2'0'              NUMBER OF SORTWORK DATA SETS
+*                                  FOUND OR DYNAMICALLY ALLOCATED
+*                                  SET BY IERRCI
+CPIIPBLK DC    XL2'0'              INPUT BLOCKING FACTOR
+CPIFFF   DC    XL2'0'              DISPLACEMENT OF F FIELD
+CPIPBUFF DC    XL2'0'              DISPLACEMENT OF PACKING BUFFER
+CPIOPBLK DC    XL2'0'              OUTPUT BLOCKING
+CPIBUF23 DS    0XL2                NUMBER OF BUFFERS - PHASE 2 AND 3
+         DC    X'00'               PHASE 2 BUFFERS
+         DC    X'00'               PHASE 3 BUFFERS
+CPISRTBL DC    XL2'0'              B  - BLOCKING FACTOR
+CPIRCDL1 DC    XL2'0'              F - INPUT RECORD LENGTH
+*                                  V - MAX INPUT RECORD LENGTH
+CPIRCDL2 DC    XL2'0'              F - SORT RECORD LENGTH
+*                                  V - MAX SORT RECORD LENGTH
+CPIRCDL3 DC    XL2'0'              F - OUTPUT RECORD LENGTH
+*                                  V - MAX OUTPUT RECORD LENGTH
+CPIRCDL4 DC    XL2'0'              F - NOT USED
+*                                  V - MIN SORT RECORD LENGTH
+CPIRCDL5 DC    XL2'0'              F - NOT USED
+*                                  V - MODAL RECORD LENGTH
+CPILAB03 DC    XL2'0'              NUMBER AND SIZE OF INPUT BUFFERS
+CPILAB07 DC    XL2'0'              L'EXTRACTED CONTROL FIELD AND THEN
+*                                  SIZE OF OUTPUT BUFFERS
+CPIEXTSZ DC    XL2'0'              SIZE OF EXTRACT ROUTINE
+CPIBINSZ DC    XL2'0'              BIN SIZE
+CPISKPRD DC    XL3'0'              SKIP RECORD COUNT
+CPIATP1E DC    XL3'0'              -> ATTACH'ORS PHASE 1 EXIT - E15
+*
+CPIATP3E DC    XL3'0'              -> ATTACH'ORS PHASE 3 EXIT - E35
+CPITAVLC DC    XL3'0'              TOTAL AVAILABLE STORAGE
+CPIFILSZ DC    XL3'0'              FILE SIZE
+CPISRTG  DC    XL3'0'              G
+CPINMAX  DC    XL3'0'              N(MAX)
+CPIP1GC  DS    0CL3                SIZE OF SORT PHASE GEN CORE
+CPIP1RSZ DC    XL3'0'              SIZE OF PHASE 1 RUNNING MODULES
+CPIP2GC  DS    0CL3                SIZE OF MERGE PHASE GENERATED CORE
+CPIP2RSZ DC    XL3'0'              SIZE OF PHASE 2 RUNNING MODULES
+CPIP3GC  DS    0CL3                SIZE OF FINAL MERGE PHASE GENERATED
+CPIP3RSZ DC    XL3'0'              SIZE OF PHASE 3 RUNNING MODULES
+CPIBUF1  DC    XL1'0'              NUMBER OF BUFFERS - PHASE 1
+CPIMRGMX DC    XL1'0'              MAXIMUM MERGE ORDER
+CPIMRGAL DC    XL1'0'              ALTERNATE MERGE ORDER
+*
+CPILINK  DC    XL3'0'              MOD EXIT LINK EDIT INFO SET BY RCH
+*                                  BITS 1-17 REPRESENT EXITS IN ORDER
+*                                  SPECIFIED IN CPICNTL EXIT AREA
+*                                  1 = EXIT RTN WAS LINK EDITED BY US
+*                                  0 = NOT LINK EDITED BY US
+*                                  BIT 18-1 = E11 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 19-1 = E21 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 20-1= E31 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 21-1 = THERE WAS A LINK EDIT
+*                                  BIT 22 - NOT USED
+*                                  BIT 23 - 1=LINK EDIT ERROR. SET BY
+*                                  RCO - CHECKED BY RCZ
+*                                  BIT 24 - NOT USED
+*
+CPIADDCF DC    AL3(0)              -> CF INFO FOR MORE THAN
+*                                     TWELVE CONTROL FIELDS
+CPIABMNO DC    CL3'000'            MESSAGE NO ASSOCIATED WITH ABEND
+CPIABC   DC    AL2(0)              DEFAULT ABEND CODE
+CPISORCE DC    XL8'0'              DDNAME OF USER LIBRARY
+CPIDDSRT DC    CL4' '              FOUR LETTER DDNAME PREFIX
+CPIDYND  DC    CL8' '              DEVICE TYPE FOR DYNAMIC ALLOCATION
+*                                  THIS MAY BE PROVIDED AS AN 8 CHAR
+*                                  GENERIC NAME. IT WILL BE CONVERTED
+*                                  TO A 4 BYTE UNIT TYPE
+CPIDYNN  DC    AL2(0)              NUMBER OF DYN ALLOC WORK DATA SETS
+CPIDYNP  DC    AL2(0)              % ADDITIONAL SPACE FACTOR TO ALLOC
+*                                  FOR SORT OVERHEAD
+         DS    0F
+CPIDYNS  DC    AL4(0)              MEGABYTES OF DASD TO ALLOCATE
+CPISTOPR DC    AL4(0)              STOP AFTER RECORD COUNT
+CPIMAXL  DC    AL4(0)              MAXIMUM STORAGE LIMIT FOR SORT/MERGE
+CPIMINL  DC    AL4(0)              MINIMUM STORAGE LIMIT FOR SORT/MERGE
+CPIMAXR  DC    AL4(0)              RESVD STORAGE - SIZE = MAX, EXEC
+CPIMAXRI DC    AL4(0)              RESVD STORAGE - SIZE = MAX, INVOKED
+CPISTOR  DC    AL4(0)              STORAGE SIZE SET BY :-
+*                                  IERAM1 (INSTALLTION OPTIONS)
+*                                  EXEC STATEMENT | ATTACH PARAMETERS
+*                                  OPTIONS STATEMENT
+CPIDDCB  DC    AL4(0)              -> SORTDIAG DCB
+CPISDCB  DC    AL4(0)              -> SYSOUT DCB
+CPIMDDN  DC    CL8' '              DDNAME FOR MESSAGE DATA SET
+CPIPDDN  DC    CL8' '              DDNAME FOR PARM DATA SET
+CPISVC   DC    H'0'                0 = NO SVC, 109, OR 200 - 255
+CPISVCE  DC    H'0'                SVC ESR NUMBER IF CPISVC = 109
+*
+*        DASD BLKSIZE TABLE BUILT BY IERRCF
+*
+CPIBLKTB DC    XL40'00'            UP TO TEN ENTRIES OF A HALF WORD
+*                                  BLKSIZE FOLLOWED BY A HALFWORD COUNT
+*                                  OF THE NUMBER OF BLKS PER TRACK
+*                                  IN DESCENDING ORDER WITH LAST ENTRY
+*                                  SET TO ZERO
+*         _________________________
+*        | 0(0)       | 2(2)       |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 4(4)       | 6(6)       |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 8(8)       | 10(A)      |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 12(C)      | 14(E)      |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 16(10)     | 18(12)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 20(14)     | 22(16)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 24(18)     | 26(1A)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 28(1C)     | 30(1E)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 32(20)     | 34(22)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 36(24)     | 38(26)     |
+*        | H'0'       |            |
+*        | END OF TAB | END OF TAB |
+*        |____________|____________|
+*
+*        NUMBER OF SORT DIRECTORY BLOCKS PER TRACK CALCED BY IERRCF
+*
+CPIDIRBK DC    H'0'
+*
+*        CONTROL STATEMENTS INPUT CONTROL
+*        AND CONTROL STATEMENTS FROM ATTACH
+*
+CPILCNTL DC    F'0'                L'CONTROL STATEMENT STORAGE
+CPIACNTL DC    A(0)                -> CONTROL STATEMENT STORAGE
+*                                     GETMAINED IN IERRCC
+CPINCNTL DC    A(0)                -> AVAILABLE SPACE FOR CNTL STMTS
+*
+CPISSORT DC    A(0)         *      STARTING ADDR OF SORT STATEMENT
+CPIESORT DC    A(0)         |      ENDING ADDR OF SORT STATEMENT
+CPISRECD DC    A(0)         |      STARTING ADDR OF RECORD STATEMENT
+CPIERECD DC    A(0)         V      ENDING ADDR OF RECORD STATEMENT
+CPISMODS DC    A(0)                STARTING ADDR OF MODS STATEMENT
+CPIEMODS DC    A(0)                ENDING ADDR OF MODS STATEMENT
+CPISOPTR DC    A(0)                STATING ADDR OF OPTION STATEMENT
+CPIEOPTR DC    A(0)                ENDING ADDR OF OPTION STATEMENT
+CPISDEBG DC    A(0)                STARTING ADDR OF DEBUG STATEMENT
+CPIEDEDB DC    A(0)                ENDING ADDR OF DEBUG STATEMENT
+CPIAAREA DC    A(0)                STARTING ADDR FOR CONTROL
+*                                  STATEMENT IMAGES
+CPIAFLDD DC    A(0)                FIELD DEFINER / REDUCTION AREA
+CPIAFLDX DC    A(0)                END OF REDUCTION AREA
+*
+CPIUEXIT DC    F'0'                USER EXIT ADDR CONSTANT
+*
+CPIWTOC  DC    XL4'00000000'       WTO ROUTING AND DESCRIPTOR CODES
+CPIWTOH  DC    CL18' '             JOBNAME,STEPNAME HDR FOR WTO
+         DC    0D'0'               ROUND TO A DOUBLE WORD
+CPIEND   EQU   *
+CPILEN   EQU   *-IERRC5            L'CPIA
+*
+*        EQUATES
+*
+CPIQDCBL EQU   96                  L'QSAM DCB
+CPIEDCBL EQU   56                  L'EXCP DCB USED FOR SORTWK AREAS
+*                                  PLUS 4 BYTE SORT ADDON
+CPIIOBL  EQU   48                  L'PREFIXED IOB FOR DASD I/O
+*
+         AIF   ('&LIST' EQ 'YES').LAB2
+         POP   PRINT
+.LAB2    ANOP
+         MEND
+./ ADD NAME=SMPPI    0101-20211-20211-1200-00808-00808-00000-RELEASE 00
+         MACRO
+         SMPPI  &LIST=NO,&CSECT=NO
+         AIF   ('&LIST' EQ 'YES').LAB1     LISTING REQUESTED ?
+         PUSH   PRINT
+         PRINT  OFF
+.LAB1    ANOP
+*
+*        MACRO - SMPPI
+*
+*        COMPONENT ID - 360S-SM-023
+*
+*        FUNCTION/OPERATION -
+*
+*        SORT/MERGE PHASE TO PHASE INFORMATION AREA (PPIA).
+*        THROUGH IT ARE COMMUNICATED THOSE PARAMETERS THAT ARE
+*        NEEDED BY THE RUNNING PROGRAMS.
+*
+.*       THE MODULE IERRCA IS MAPPED BY DSECT IERRCA AND
+.*       REFERENCED BY ALL OF THE RUNNING AND ASSIGNMENT MODULES.
+.*       IT IS RESIDENT THROUGHOUT THE SORT IN THE IERRCB LOAD MODULE
+.*
+.*       NOTE -
+.*       ANY CHANGES TO FLAG NAMES MUST BE REFLECTED IN THE
+.*       PPICNTL MACRO
+.*
+         AIF   ('&CSECT' EQ 'YES').LAB2    CSECT OR DSECT ?
+IERRCA   DSECT                     PHASE TO PHASE INFORMATION AREA
+         AGO   .LAB3               BYPASS CSECT DEFINITION
+.LAB2    ANOP
+IERRCA   CSECT                     PHASE TO PHASE INFORMATION AREA
+.LAB3    ANOP
+*
+*        IEZBITS
+*
+         IEZBITS
+*
+PPISAVEA DC    18F'0'              REGISTER SAVE AREA
+*
+*        THE FOLLOWING 296 (X'128') BYTES OF PPI COMPOSE A WORK AREA
+*
+*        THE FUNCTION OF FIELDS WITHIN THIS AREA IS DEPENDENT
+*        UPON TECHNIQUE BEING USED AND PHASE CURRENTLY IN CONTROL
+*
+PPIWKARE DS    0CL256              STARTING ADDR OF SORT WORK AREA
+*                                  ALL DISK ALGORITHMS MOVE
+*                                  DIRECTORY INTO THIS AREA
+*                                  READ PRIME - RGB,AGD,RGO,RGC
+*                                               AGE,RGP
+*                                  USED BY WRITE DIRECTORY
+*                                  USED BY - AGP,RPB,RPE,RPO,RPN
+*                                            RPG,RGM
+PPIPDWA  DS    0CL64               MERGE NETWORK PRIME AREA
+*                                  READ PRIME RTN PLACES ADDRS OF
+*                                  FIRST RECORD FROM EACH INPUT UNIT
+*                                  FOR CURRENT MERGE PASS
+*                                  USED BY DISK ALGORITHMS
+PPIP1GC  DC    XL4'0'              SIZE OF SORT PHASE GEN CORE
+PPIP1ASZ DC    XL4'0'              PHASE 1 ASSIGNMENT SIZE
+PPISKPRD DC    XL4'0'              SKIP RECORD COUNT USED BY IERADM
+PPIATP1E DC    XL4'0'              -> ATTACH'ORS PHASE 1 EXIT
+*                                     USED BY IERAPC AND SORT PHASE
+*                                     DEBLOCK ASSIGNMENT
+PPIIPBLK DC    XL4'0'              INPUT BLOCKING
+PPIBUF1  DC    XL4'0'              NUMBER OF BUFFERS - PHASE 1
+PPIEXTSZ DC    XL4'0'              SIZE OF EXTRACT ROUTINE
+PPIFFF   DC    XL4'0'              DISPLACEMENT OF F FIELD
+PPIPBUFF DC    XL4'0'              DISPLACEMENT OF PACKING BUFFER
+         DC    XL4'0'              ALIGNMENT BYTES
+PPINUMCF DC    XL2'0'              NUMBER OF CONTROL FIELDS
+PPIPCF01 DC    XL3'0'              CONTROL FIELD 01 - POSITION
+PPIMCF01 DC    XL2'0'                               - MEASUREMENT
+PPIFCF01 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF02 DC    XL3'0'              CONTROL FIELD 02 - POSITION
+PPIMCF02 DC    XL2'0'                               - MEASUREMENT
+PPIFCF02 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF03 DC    XL3'0'              CONTROL FIELD 03 - POSITION
+PPIMCF03 DC    XL2'0'                               - MEASUREMENT
+PPIFCF03 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF04 DC    XL3'0'              CONTROL FIELD 04 - POSITION
+PPIMCF04 DC    XL2'0'                               - MEASUREMENT
+PPIFCF04 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF05 DC    XL3'0'              CONTROL FIELD 05 - POSITION
+PPIMCF05 DC    XL2'0'                               - MEASUREMENT
+PPIFCF05 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF06 DC    XL3'0'              CONTROL FIELD 06 - POSITION
+PPIMCF06 DC    XL2'0'                               - MEASUREMENT
+PPIFCF06 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF07 DC    XL3'0'              CONTROL FIELD 07 - POSITION
+PPIMCF07 DC    XL2'0'                               - MEASUREMENT
+PPIFCF07 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF08 DC    XL3'0'              CONTROL FIELD 08 - POSITION
+PPIMCF08 DC    XL2'0'                               - MEASUREMENT
+PPIFCF08 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF09 DC    XL3'0'              CONTROL FIELD 09 - POSITION
+PPIMCF09 DC    XL2'0'                               - MEASUREMENT
+PPIFCF09 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF10 DC    XL3'0'              CONTROL FIELD 10 - POSITION
+PPIMCF10 DC    XL2'0'                               - MEASUREMENT
+PPIFCF10 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF11 DC    XL3'0'              CONTROL FIELD 11 - POSITION
+PPIMCF11 DC    XL2'0'                               - MEASUREMENT
+PPIFCF11 DC    XL1'0'                               - FORMAT + SEQUENCE
+PPIPCF12 DC    XL3'0'              CONTROL FIELD 12 - POSITION
+PPIMCF12 DC    XL2'0'                               - MEASUREMENT
+PPIFCF12 DC    XL1'0'                               - FORMAT + SEQUENCE
+*
+         ORG   IERRCA+136
+*
+PPIPSVA  DS    CL64                MERGE NETWORK PRIME SAVE AREA
+*                                  RECORDS WHOSE ADDRS ARE IN PDWA
+*                                  ARE PUT IN ORDER BY COLLATING SEQ
+*                                  THEIR ADDRS ARE PLACED HERE
+*                                  BY MERGE NETWORK
+*                                  USED BY MODULES RGB, RGC, RGO, RGD,
+*                                  RGE, RGP AT RUNNING TIME
+*
+         ORG   IERRCA+152
+*
+PPIDSKED DS    CL68
+*
+*        FORMAT DURING GENERAL ASSIGNMENT
+*
+*        THIS AREA IS USED FOR UP TO 17 DISK SORTWORK DATA SETS
+*        USED BY IERRC4, IERRCJ, IERAO1
+*
+*        INITIALIZED BY IERRC4
+*        1 BYTE CHANNEL ADDR (FROM UCB)
+*        1 BYTE UNIT ADDR (FROM UCB)
+*        2 BYTES NO OF TRACKS FOR THIS DDNAME (FROM FMT 1 DSCB)
+*         _______________________ _______________________
+*        |0(0)       |1(1)       |2(2)                   |
+*        | CHANNEL   | UNIT      | NUMBER OF TRACKS (16B)|
+*        | ADDR      | ADDR      | ALLOCATED TO SORTWK01 |
+*        |___________|___________|_______________________|
+*        |4(4)       |5(5)       |6(6)                   |
+*        | CHANNEL   | UNIT      | NUMBER OF TRACKS (16B)|
+*        | ADDR      | ADDR      | ALLOCATED TO SORTWK02 |
+*        |___________|___________|_______________________|
+*        /                                               /
+*        /                                               /
+*        /_______________________________________________/
+*        |64(40)     |65(41)     |66(42)                 |
+*        | CHANNEL   | UNIT      | NUMBER OF TRACKS (16B)|
+*        | ADDR      | ADDR      | ALLOCATED TO SORTWK17 |
+*        |___________|___________|_______________________|
+*
+*
+         ORG   IERRCA+288
+*
+*        DASD ADDR INFO BUILD BY IERRC4
+*
+PPISTAR  DC    17XL8'00'           DASD STARTING ADDR
+*                                  M000000R (RELATIVE TT)
+*                                  ONE ENTRY FOR EACH OF 1 TO 17
+*                                  DISK SORTWORK DATA SETS
+*                                  INITIALIZED BY IERRC4
+*                                  THE M BYTE IS THE DDNAME SUFFIX
+*                                  IN BINARY IE X'01',X'02' ETC
+*                                  AFTER OPTIMIZATION BY IERAO1
+*                                  THE ENTRIES ARE REORDERED AND
+*                                  THE M BYTE IS AN OFFSET INTO
+*                                  THE DCB TABLE
+*
+PPIENDAR DC    17XL8'00'           DASD ENDING ADDR
+*                                  M0000TTR (RELATIVE TT)
+*                                  ONE ENTRY FOR EACH OF 1 TO 17
+*                                  DISK SORTWORK DATA SETS
+*                                  SEE PPISTAR FOR FURTHER INFO
+*
+         ORG   IERRCA+200
+*
+PPILAB01 DS    0CL64               UTILITY STORAGE POSITION 1
+*                                  USED FOR READ/WRITE DIRECTORY
+         DC    XL32'0'             SEQUENCE ADDRS
+         DC    XL12'0'             ALIGNMENT BYTES
+PPITPPT  DC    XL4'0'              TAPE TABLE POINTER
+*                                  TAPE ALGORITHMS USE THIS FIELD
+*                                  HI ORDER BYTE INDICATES CHANNEL
+*                                  OF SORTIN - SET BY IERRC4 USED
+*                                  BY IERAO2
+*                                  ***************
+*                                  *  MAX *  ALT  *
+*                                  * MERGE* MERGE*
+*                                  ***************
+PPITPTBL DS    0CL136              TAPE TABLE
+*                                  INITIALIZED BY IERRC4
+*                                  ALTERED BY TAPE ALGORITHMS
+         DC    XL32'0'
+*                                  TWO BYTE ENTRY FOR EACH UNIT
+*                                  ***********************
+*                                  * XXXXOOOO *  DDNAME  *
+*                                  * 1234     *  IDENT   *
+*                                  ***********************
+*                                  X1=INPUT/OUTPUT BIT
+*                                     1=INPUT
+*                                     0=OUTPUT
+*                                  X2=OPEN BIT
+*                                     1=OPEN ROUTINE SHOULD  OPEN UNIT
+*                                  X3=FULL REEL BIT (OSCILLATING ONLY)
+*                                     1=UNIT CONTAINS FULL REEL
+*                                     0=UNIT DOES NOT CONTAIN FULL REEL
+*                                  X4=COLLATING SEQ BIT (OSCIL ONLY)
+*                                     SET AT EOF OR RMAX TIME ONLY
+*                                     1=DESCENDING
+*                                     0=ASCENDING
+PPIDIRAD DC    XL8'0'              DISK DIRECTORY ADDR (BALN ONLY)
+*                                  ALGORITHM/READ/WRITE
+PPIODOM  DS    0CL64               ODOMETER TABLE FOR OSCILLATING
+*                                  SORT, 1 WORD FOR EACH OF 16 LEVELS
+*                                  BYTE1= NO SEQUENCES AT THIS LEVEL
+*                                  BYTES2-4=ADDRS OF NEXT TAPE TABLE
+*                                  ENTRY TO BE USED AS OUTPUT FOR
+*                                  THIS LEVEL
+*                                  SET AND MAINTAINED BY OSC ALG
+*
+         ORG   IERRCA+560
+*
+*        CONTROL FLAGS
+*
+PPICNTL  DC    XL16'0'
+*                            +0
+PPIFIX   EQU   BIT0                 1. FIXED LENGTH RECORDS
+PPIVAR   EQU   BIT1                 2. VARIABLE LENGTH RECORDS
+PPISCF   EQU   BIT2                 3. SINGLE CONTROL FIELD
+PPIMCF   EQU   BIT3                 4. MULTIPLE CONTROL FIELDS
+PPIBALN  EQU   BIT4                 5. BALANCED
+PPIPOLY  EQU   BIT5                 6. POLYPHASE
+PPIOSC   EQU   BIT6                 7. OSCILLATING
+PPI8WAY  EQU   BIT7                 8. 1 TO 8
+*                            +1
+PPI16WAY EQU   BIT0                 9. 1 TO 16
+PPITAPE  EQU   BIT1                10. TAPE
+PPIDISK  EQU   BIT2                11. DISK
+PPINODC  EQU   BIT3                12. NO DATA CHAINING - NOT USED
+PPINODCI EQU   BIT4                13. DATA CHAINING INPUT - NOT USED
+PPINODCO EQU   BIT5                14. DATA CHAINING OUTPUT - NOT USED
+PPINOMOD EQU   BIT6                15. NO MODS
+PPIMODS  EQU   BIT7                16. MODS
+*                            +2
+PPILE256 EQU   BIT0                17. LRECL < 256 SET FOR INPUT AND
+PPIGT256 EQU   BIT1                18. LRECL > 256 THEN RESET FOR OUTPT
+PPISKIP  EQU   BIT2                19. SKIP OPTION
+PPIPH1   EQU   BIT3                20. PHASE 1
+PPIPH2   EQU   BIT4                21. PHASE 2
+PPIPH3   EQU   BIT5                22. PHASE 3
+PPIMERGO EQU   BIT6                23. MERGE ONLY
+PPICHKPT EQU   BIT7                24. CHECKPOINT
+*                            +3
+PPIEQUAL EQU   BIT0                25. EQUALS (MERGING SORT CNTL FLDS)
+PPIEXTRT EQU   BIT1                26. EXTRACT
+PPIUOSEQ EQU   BIT2                27. USER'S OUTPUT SEQUENCE
+*                                      1=DESCENDING
+*                                      0=ASCENDING
+PPIPH1CO EQU   BIT3                28. PHASE 1 COLLATING ORDER OR
+*                                      MERGE INPUT ORDER
+*                                      1=DESCENDING
+*                                      0=ASCENDING
+PPIDMCO  EQU   BIT4                29. DISK MERGE TABLE COLLATING ORDER
+*                                      1=DESCENDING
+*                                      0=ASCENDING
+PPIATT   EQU   BIT5                30. ATTACHED, LINKED OR EXECUTED
+PPIFSZE  EQU   BIT6                31. FILESIZE ESTIMATED
+*                                      1=ESTIMATED
+*                                      0=NOT SPECIFIED
+PPIPEOF  EQU   BIT7                32. ASSGN OR RUNNING PROGRAM EOF
+*                                      1=RUNNING PROG EOF
+*                                      0=ASSIGNMENT TIME EOF
+*                                      OSC-QSAM HAS DETECTED EOF
+*                                      1=QSAM EOF
+*                                      0=QSAM HAS NOT DETECTED EOF
+*                            +4
+PPIETCF  EQU   BIT0                33. E-TYPE CONTROL FIELDS PRESENT
+PPISCARD EQU   BIT1                34. SORT STMT PRESENT
+PPIMCARD EQU   BIT2                35. MERGE STMT PRESENT
+PPIRCARD EQU   BIT3                36. RECORD STMT PRESENT
+PPIMODCD EQU   BIT4                37. MODS STMT PRESENT
+PPIEXSYS EQU   BIT5                38. EX SYSTEM SEARCH - NOT USED
+PPIDWA   EQU   BIT6                39. DOUBLE WORD ALIGNMENT FOR BUFS
+PPISWA   EQU   BIT7                40. SINGLE WORD ALIGNMENT FOR BUFS
+*                            +5
+PPIREADE EQU   BIT0                41. READ ERROR FLAG
+PPIWRITE EQU   BIT1                42. WRITE ERROR FLAG
+PPIEVNOD EQU   BIT2                43. EVEN/ODD SWITCH FOR BALANCED
+*                                  44  AND 45
+PPIMP    EQU   BIT3+BIT4               00 - 1 MPLX
+PPIMPSE1 EQU   BIT3                    01 - 1 MPLX + 1 SEL OR 1 SEL
+PPIMPSEN EQU   BIT4                    10 - 1 MPLX + N SEL OR N SEL
+PPIINWRK EQU   BIT5                46. INPUT A WORK UNIT
+PPITAU   EQU   BIT6                47. SWITCH OR TAU
+PPINCHAN EQU   BIT7                48. N CHANNEL ENVIRONMENT
+*                            +6
+PPIDEBB  EQU   BIT0                49. DEBLOCK BACKWARD
+*                                      SET BY ALG, USED BY SORT DEF
+PPIREADF EQU   BIT1                50. READ FORWARD
+*                                      SET BY ALG, USED BY SORT DEF
+PPICLOSR EQU   BIT2                51. CLOSE WITH REWIND
+*                                      SET BY ALG, USED BY EOP
+PPIBLKF  EQU   BIT3                52. BLOCK FORWARD
+*                                      SET BY ALG, USED BY SORT DEF
+PPIREADB EQU   BIT4                53. READ FORWARD LATER
+*                                      SET BY ALG, USED BY ALG
+PPI2301  EQU   BIT5                54. 2301 DRUM - NOT USED
+PPI2314  EQU   BIT6                55. 2314 DISK - USED TO INDIC CRCX
+*        EQU   BIT7                56. RESERVED
+*                            +7
+PPIUEOF  EQU   BIT0                57. USER EOF (OSC/CRCX), SET BY
+*                                      DEBLOCK, USED BY ALG
+PPIRMAXR EQU   BIT1                58. RMAX REACHED (DCS ONLY) SET BY
+*                                      DEBLOCK, USED BY ALG
+PPIUIIP  EQU   BIT2                59. USER INSERT IN PROCESS -OSC/CRCX
+*                                      SET BY BLOCK, USED BY ALG
+PPI7TRK  EQU   BIT3                60. TRACK TAPE
+*                                      0=9 TRK
+*                                      1=7 TRK OR 7-9 MIX
+PPICRCX  EQU   BIT4                61. CRCX TECH HAS BEEN REQUESTED
+PPI2311  EQU   BIT5                62. 2311'S USING CRCX - NOT USED
+PPIVALCT EQU   BIT6                63. VALUE COUNT OF 256 FOR FIELDS
+*                                      PARAMETER - SET BY -RCD FOR -RCE
+*                                      LATER USED BY RCN TO INDICATE
+*                                      BALN TECH ON 2314 - 1=YES,0=NO
+PPIACCPT EQU   BIT7                64. ACCEPT/SKIP OPTION ACTIVATED-
+*                                      READ I/O ERROR TO -RCV INTERFACE
+*                            +8
+PPISTOPF EQU   BIT0                65. STOP AFTER RECORD COUNT OPTION
+PPIDYNA  EQU   BIT1                66. DYNAUTO = YES
+PPIDYNI  EQU   BIT2                67. DYNAUTO = IGNWKDD
+PPIEQUO  EQU   BIT3                68. EQUALS = YES (RECORD EQUALS)
+PPIERET  EQU   BIT4                69. ERET = ABEND
+PPIESTA  EQU   BIT5                70. ESTAE = YES
+PPIECHK  EQU   BIT6                71. EXITCK = STRONG
+PPIFSEX  EQU   BIT7                72. FSZEST = YES EXTACT
+*                            +9
+PPILIST  EQU   BIT0                73. LIST = YES
+PPIRSET  EQU   BIT1                74. RESET = YES
+PPISMFR  EQU   BIT2                75. SMF = YES
+PPISMFL  EQU   BIT3                76. SMF = FULL
+PPILIBS  EQU   BIT4                77. SORTLIB = SYSTEM
+PPIMAXS  EQU   BIT5                78. SIZE/MAINSIZE/CORE=MAX
+PPIABMSG EQU   BIT6                79. USE MSG NO FOR ABEND
+*        EQU   BIT7                80. RESERVED
+*                            +10
+PPICALL  EQU   BIT0                81. ALL MESSAGES TO THE CONSOLE
+PPICCRT  EQU   BIT1                82. CRITICAL MESSAGES TO THE CONSOLE
+PPIPALL  EQU   BIT2                83. ALL MESSAGES TO THE PRINTER
+PPIPCRT  EQU   BIT3                84. CRITICAL MESSAGES TO THE PRINTER
+PPIOSTMT EQU   BIT4                85. OPTION STATEMENT PRESENT
+PPIDSTMT EQU   BIT5                86. DEBUG STATEMENT PRESENT
+PPIVSEQ  EQU   BIT6                87. VERIFY=YES FOR SEQUENCE CHECK
+PPICHCK  EQU   BIT7                88. CHECK=YES FOR RECORD COUNT
+*                            +11
+PPIDIAG  EQU   BIT0                89. DIAGNOSTICS ON SORTDIAG
+PPIDSIM  EQU   BIT1                90. DIAGSIM = YES (DIAGS ON SYSOUT)
+PPITEXCP EQU   BIT2                91. TRACE EXCP
+PPITWAIT EQU   BIT3                92. TRACE COMPLETION OF EXCP (WAIT)
+PPITMODF EQU   BIT4                93. TRACE MODULE FLOW
+PPITSCPI EQU   BIT5                94. SNAP THE CPI (NOT TESTED IN PPI)
+PPITSPPI EQU   BIT6                95. SNAP THE PPI
+PPITBRKP EQU   BIT7                96. EXECUTE BREAKPOINTS
+*
+*        EXIT MODIFICATION FLAGS
+*
+*                            +12
+PPIME11  EQU   BIT0                97. E11
+PPIME15  EQU   BIT1                98. E15
+PPIME16  EQU   BIT2                99. E16
+PPIME17  EQU   BIT3               100. E17
+PPIME18  EQU   BIT4               101. E18
+PPIME21  EQU   BIT5               102. E21
+PPIME25  EQU   BIT6               103. E25
+PPIME27  EQU   BIT7               104. E27
+*                            +13
+PPIME28  EQU   BIT0               105. E28
+PPIME31  EQU   BIT1               106. E31
+PPIME35  EQU   BIT2               107. E35
+PPIME37  EQU   BIT3               108. E37
+PPIME38  EQU   BIT4               109. E38
+PPIME61  EQU   BIT5               110. E61
+PPIME19  EQU   BIT6               111. E19
+PPIME29  EQU   BIT7               112. E29
+*                            +14
+PPIME39  EQU   BIT0               113. E39
+PPIMER1  EQU   BIT1               114.       RESERVED
+PPIMER2  EQU   BIT2               115.          ..
+PPIMER3  EQU   BIT3               116.          ..
+PPIMER4  EQU   BIT4               117.          ..
+PPIMER5  EQU   BIT5               118.          ..
+PPIMVSI  EQU   BIT6               119. RECFM=VBS ON INPUT
+PPIMVSO  EQU   BIT7               120. RECFM=VBS ON OUTPUT
+*                            +15
+*                                 121.       RESERVED
+*                                 122.          ..
+*                                 123.          ..
+*                                 124.          ..
+*                                 125.          ..
+*                                 126.          ..
+*                                 127.          ..
+*                                 128.          ..
+*
+*        VERSION IDENTIFICATION
+*
+PPIVER   DC    CL4' '              PROVIDED BY IERAM1 VIA CPI
+*
+PPILINK  DC    XL3'0'              MOD EXIT LINK EDIT INFO SET BY RCH
+*                                  BITS 1-17 REPRESENT EXITS IN ORDER
+*                                  SPECIFIED IN PPICNTL EXIT AREA
+*                                  1 = EXIT RTN WAS LINK EDITED BY US
+*                                  0 = NOT LINK EDITED BY US
+*                                  BIT 18-1 = E11 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 19-1 = E21 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 20-1= E31 LINKEDIT SEPARATELY
+*                                  BY US
+*                                  BIT 21-1 = THERE WAS A LINK EDIT
+*                                  BIT 22 - NOT USED
+*                                  BIT 23 - 1=LINK EDIT ERROR. SET BY
+*                                  RCO - CHECKED BY RCZ
+*                                  BIT 24 - NOT USED
+*
+         DC    XL1'00'             FOR ALIGNMENT
+*
+*        THE FOLLOWING ITEMS ARE USED TO KEEP RECORD AND SEQUENCE
+*        COUNTS
+*
+PPICOUNT DC    F'0'                RECORD COUNTER
+*                                  PH1-OSC COUNT OF RECORDS DEBLOCKED
+*                                  FROM INPUT DATA SET
+*                                  PH2-COUNT OF RECORDS WRITTEN OUT ON
+*                                  WORK UNITS
+*                                  PH3-COUNT OF RECORDS OUTPUTED ON
+*                                  SORTOUT
+PPIDELCT DC    F'0'                DELETE COUNTER
+PPIINSCT DC    F'0'                INSERT COUNTER
+PPIRCDCT DC    F'0'                RECORD COUNTER
+*                                  TOTAL RECORDS ENTERING A PHASE -
+*                                  INCLUDES INSERTS
+PPISEQCT DC    XL12'0'             SEQUENCE COUNTERS
+*                                  DISK - TWO BYTE ENTRIES-EACH HAS SEQ
+*                                  COUNT FOR ITS SPECIFIC DISK AREA
+*                                  BAL - 4 BYTE ENTRIES -
+*                                  BYTES 0-3-N/. SEQ ENTERING A PHASE
+*                                  BYTES ->-N/. SEQ BEING CREATED IN
+*                                  PRESENT PHASE
+*                                  BYTES 8-9-SET TO 2 FOR ERROR HAND
+*                                  POLY - NOT USED
+*
+*        CONSTANTS SET IN PPI
+*
+PPIDVCT  DC    A(0)                -> DASD DEVICE ENTRY IN IECZDTAB
+*                                     FOR SORTWORK UNITS
+PPIFILSZ DC    F'0'                FILE SIZE
+*                                  SET TO 0 IF FILE SIZE IS NOT
+*                                  SPECIFIED ON SORT CONTROL CARD
+PPIBINSZ DC    F'0'                BIN SIZE
+*                                  SET BY RCN, USED BY BLOCK DEBLK
+PPINMAX  DC    F'0'                N(MAX)
+*                                  MAXIMUM NO OF RECORDS WHICH SORT
+*                                  CAN GUARANTEE TO HANDLE
+*                                  SET BY RCJ FOR DISK, OR B/G FOR TP
+PPIRMAX  DC    F'0'                CALCULATED BY ALG
+*                                  F - NO RECORDS AT SORT BLKNG THAT
+*                                      CAN BE CONTAINED ON FULL REEL
+*                                  V - NO BYTES AT SORT BLKNG THAT CAN
+*                                      BE CONTAINED ON FULL REEL
+PPISRTG  DC    F'0'                G - NO RECORDS IN RSA; SET BY B/G
+PPISRTBL DC    H'0'                B - SORT BLOCKING FACTOR; SET BY B/G
+PPIOPBLK DC    H'0'                OUTPUT BLOCKING
+PPIBUF23 DC    0H'0'               NUMBER OF BUFFERS - PHASE 2 AND 3
+         DC    X'00'               PHASE 2 BUFFERS
+         DC    X'00'               PHASE 3 BUFFERS
+         DC    0F'0'
+PPIOPFMP DC    XL8'0'              OUTPUT UNIT FOR PHASE 3
+PPIDEPHO DC    XL8'0'              OUTPUT ADDR
+*                                  DISK -
+*                                  DEPHO CONTAINS OUTPUT UNIT INCR
+*                                  DEPHO+1 -> BBCCHHR
+*                                  TAPE -
+*                                  DEPHO+3 CONTAINS OUTPUT UNIT INCR
+*
+PPIRCDL1 DC    H'0'                F - INPUT RECORD LENGTH
+*                                  V - MAX INPUT RECORD LENGTH
+PPIRCDL2 DC    H'0'                F - SORT RECORD LENGTH
+*                                  V - MAX SORT RECORD LENGTH
+PPIRCDL3 DC    H'0'                F - OUTPUT RECORD LENGTH
+*                                  V - MAX OUTPUT RECORD LENGTH
+PPIRCDL4 DC    H'0'                F - NOT USED
+*                                  V - MIN SORT RECORD LENGTH
+PPIRCDL5 DC    H'0'                F - NOT USED
+*                                  V - MODAL RECORD LENGTH
+PPIMRGMX DC    H'0'                MAXIMUM MERGE ORDER
+*                                  SET BY B/G
+PPIMRGAL DC    H'0'                ALTERNATE MERGE ORDER
+*                                  POLY=1, OSC=1, BAL=ALT MERGE
+*                                  ORDER, DISK=MAX MERGE ORDER SAVED
+PPIMRGOP DC    H'0'                OPTIMUM MERGE ORDER
+*                                  POLY=NONE, BAL=NONE, OSC=NONE,
+*                                  DISK=OPT MERGE ORDER (DISK OPTIM)
+PPIDD0L1 DC    XL4'0'              MERGE NETWORK'S MAJOR CONTROL FIELD
+*                                  BYTE 1-2 DISPLACEMENT TO FIELD
+*                                  BYTE 4   LENGTH
+PPIAXERT DC    A(0)                -> EQUALS OR EXTRACT ROUTINE
+*                                     GETMAINED BY IERRCZ
+PPIUSER  DC    XL4'0'              USER COMMUNICATION AREA
+PPILEXFD DC    H'0'                LENGTH OF EXTRACTED FIELDS FOR COMPA
+PPILEXFF DC    H'0'                LENGTH OF EXTRACTED FIELDS FULL
+PPINDSKA DC    H'0'                NUMBER OF DISK SORTWORK DATA SETS
+*                                  SET IN IERRCI
+PPIBPTRK DC    H'0'                NO BLOCKS PER TRACK FOR DASD DEVICE
+*                                  SET BY RCJ
+PPILAB03 DC    0XL4'0'             SET BY B/G FOR INPUT (SORTIN)
+         DC    AL1(0)              NO OF SORTIN BUFFERS
+         DC    AL3(0)              BUFFER SIZE
+PPILAB07 DC    0XL4'0'             SET BY B/G CALC RTN
+         DC    AL1(0)              NO OF SORTWKXX OUTPUT BUFFERS
+         DC    AL3(0)              SORTWKXX BUFFER SIZE
+PPIDOUO  DS    0CL4                USER OPTION SETTING FOR SEQUENCE
+*                                  CHECK. 0 = NOCHECK, 4 = CHECK
+PPILAB09 DC    0XL4'0'             SET BY B/G CALC RTN
+         DC    AL1(0)              NO OF PH2 OUTPUT BUFFERS
+         DC    AL1(0)              NO OF PH3 OUTPUT BUFFERS
+         DC    AL2(0)              PH3 OUTPUT BUFFER SIZE
+PPIP2GC  DC    XL4'0'              SIZE OF MERGE PHASE GENERATED CORE,
+*                                  SET BY B/G, USED BY LAYOUT CALC
+PPIP3GC  DC    XL4'0'              SIZE OF FINAL MERGE PHASE GENERATED
+*                                  CORE, SET BY B/G, USED BY CALC
+PPIP3ASZ DC    XL4'0'              NOT USED
+PPIATP3E DC    XL4'0'              -> ATTACH'ORS PHASE 3 EXIT
+PPITAVLC DC    XL4'0'              SORT PHASE AVAILABLE CORE
+*                                  SET TO AM1 VALUE BY RCJ, RESET TO
+*                                  AMOUNT CORE AVAIL FOR BUFFERS, RSA,
+*                                  AND GEN CORE BY B/G, USED BY
+*                                  LAYOUT CALC
+PPITREND DC    XL4'0'              ENDING ADDR OF TREE
+*
+*        TABLES OR AREA VECTORS
+*
+PPISPGN1 DC    A(0)                -> NEXT AVAILABLE BYTE IN
+*                                     GENERATED STORAGE ALL
+*                                     ROUTINES THAT USE GENERATED
+*                                     STORAGE SET BY LAYOUT
+*                                     CALCULATIONS
+PPILAB02 DC    A(0)                -> SORTIN INPUT BUFFER TABLE
+*                                     ADDRS OF SORT PHASE SORTIN
+*                                     BUFFERS
+*                                  SET BY LAYOUT CALCULATIONS RTN
+PPILAB04 DC    0A(0)               FIRST OUTPUT BUFFER 1
+         DC    X'00'               FLAG BYTE
+*        EQU   X'80'               DO NOT GETMAIN ADDITIONAL OUTPUT BUF
+         DC    AL3(0)              -> FIRST OUTPUT BUFFER 1
+PPILAB05 DC    A(0)                -> SECOND OUTPUT BUFFER 2
+*                                     ZERO IF ONLY 1 BUFFER
+PPILAB06 DC    A(0)                -> CONTROL BUFFER
+*                                     PH1    - INPUT BUFFER POOL
+*                                     PH3/MO - OUTPUT BUFFER POOL
+PPIDOOBA DS    0CL4                -> RECORD IN OUTPUT BUFFER
+*                                     FOR SEQUENCE CHECK
+*                                     PHASE 2/3 MERGE NETWORK ONLY
+PPILAB08 DC    XL4'0'              BYTE 1    - NO ENTRIES IN RSA TABLE
+*                                  BYTES 2-4 - ADDR OF RSA TABLE
+*                                  RSA TABLE IS IN GENERATED STORAGE
+*                                  AND CONTAINS THE ADDR AND SIZE OF
+*                                  EACH CHUNK OF RSA
+PPIBDSVA DC    0XL16'0'            BLOCK/DEBLOCK CNTL AREA
+         DC    AL1(0)       +00    TOTAL NO WORK UNITS
+         DC    AL3(0)       +01    -> INPUT BUFFER TABLE
+*                                     PHASE 2 AND PHASE 3 -
+*                                     DIFFERS FROM LAB02 IN THAT
+*                                     BUFFER ADDR ARE FOR BUFFERS
+*                                     CURRENTLY IN USE IN ORDER
+*                                     BY DCB INCREMENTS
+         DC    AL4(0)       +04    -> MOVE RTN (PH1) - FIXED RECORDS
+*                                  -> NEXT AVAILABLE BIN - VAR RECORDS
+         DC    AL4(0)       +08    -> MOVE RTN PHASE 2 AND PHASE 3
+*                                  NO OF AVAILABLE BINS - VAR RECORDS
+         DC    AL4(0)       +12    -> MOVE RTN PHASE 1 - VAR RECORDS
+PPISTDCB DC    A(0)                -> DCB TABLE
+*                                     USED BY READ/WRITE/BLOCK
+*                                     THE TABLE WHICH IS IN
+*                                     GENERATED STORAGE CONTAINS
+*                                     A ONE WORD ENTRY FOR EACH
+*                                     DCB. ENTRIES ARE ORDERED
+*                                     ACCORDING TO OFFSETS
+PPISBLCT DC    A(0)                -> BLOCK COUNT TABLE
+*                                     TABLE IS IN GENERATED
+*                                     STORAGE AND INDICATES BLOCK
+*                                     SIZE FOR EACH INPUT BUFFER
+*                                     DURING A MERGE PASS
+PPISTIOB DC    A(0)                -> IOB TABLE
+*                                     USED BY READ/WRITE ROUTINES
+*                                     IN ORDER TO ACCESS IOBS
+*                                     FOR DISK, ENTRIES ARE ORDERED
+*                                     ACCORDING TO OFFSETS
+*
+PPIUNTCT DC    A(0)                OSC ONLY - ADDR OF UNIT COUNT TABLE
+*                                  UNIT COUNT TABLE IS IN STORAGE
+*                                  1 WORD COUNTER FOR EACH UNIT WILL
+*                                  ALWAYS REFLECT THE NUMBER OF
+*                                  RECORDS ON EACH UNIT
+PPILAB10 DC    0A(0)               OSC AND CRCX ONLY
+         DC    AL1(0)              NUMBER OF BUFFERS OBTAINED
+         DC    AL3(0)              INPUT BUFFER TABLE FOR MERGE PHASE
+*                                  INITIALLY SET BY LAYOUT CALCULATION
+PPIGETMN DC    A(0)                -> GETMAIN TABLE OF ADDRS
+*                                     CONTAINS ADDR OF EACH AREA OF
+*                                     STORAGE OBTAINED BY GETMAIN
+*                                     EACH ENTRY IS 3 BYTES
+*                                     FIRST BYTE IS COUNT OF NUMBER
+*                                     OF ENTRIES IN THE TABLE
+*                                     INITED BY IERAPG,APH,API,APL
+PPIGETSZ DC    A(0)                -> GETMAIN TABLE OF SIZES
+*                                     CONTAINS SIZE OF EACH AREA OF
+*                                     STORAGE OBTAINED BY GETMAIN
+*                                     CORRESPONDS WITH THE GETMAIN TAB
+*                                     OF ADDRS, EACH ENTRY IS 3 BYTES
+*                                     FIRST BYTE IS COUNT OF NUMBER
+*                                     OF ENTRIES IN THE TABLE
+*                                     INITED BY IERAPG,APH,API,APL
+PPISORCE DC    XL8'0'              DDNAME OF USER MOD LIBRARY AND THEN
+*                                  -> DCB OF SYSLMOD USER LIB
+*                                  -> DCB OF SYSLMOD
+PPISLIB  DC    A(0)                -> DCB OF SORT LIBRARY
+*
+*        PPI MODULE INTERFACE LIST
+*
+*        EACH ENTRY IN LIST IS EIGHT BYTES AND WILL HAVE THE
+*        FOLLOWING FORMAT -
+*
+*         _______________________
+*        | SYMBOLIC  | ABSOLUTE  |
+*        |3 CHAR NAME| ADDRESS   |
+*        |___________|___________|
+*         - 4 BYTES  -  4 BYTES -
+*
+*        THE LIST BELOW MAY CHANGE ITS ORDER BUT THE LABELS WILL
+*        NOT BE CHANGED
+*
+PPIRCV   DC    A(0)                SORT SYSTEM CONTROL FOR RUNNING PGM
+PPIADSSC DC    A(0)                -> VECTOR TABLE IN IERRCV
+*
+*        TABLE OF 30 ENTRIES LOADED BY IERRC9
+*
+*        FIRST 4 BYTES   - MODULE NAME (LAST 3 CHARS)
+*        SECOND 4 BYTES -> LOADED PROGRAM ADDR
+*
+PPIALG   DC    XL8'0'        *     ALGORITHM - PH 1 AND PH 2
+PPIDEB   DC    XL8'0'        |     DEBLOCK - PH 1 AND PH 3
+PPINET   DC    XL8'0'        |     NETWORK - PH 1 AND PH 3
+PPIBLK   DC    XL8'0'        |     BLOCK - PH 1 AND PH3
+PPIWRT   DC    XL8'0'        |     WRITE - PH 1 AND PH2
+*                            |     RPG - PH3
+*                            |
+PPIVMV   DC    XL8'0'        |     VAR MOVE - SORT PHASE
+PPIRD    DC    XL8'0'        |     READ - PH 2 AND PH3
+PPIDEB2  DC    XL8'0'        |     DEBLOCK PH2 - PRIME RTN
+PPINETM  DC    XL8'0'        |     MERGE NETWORK - PH 2
+PPIBLK2  DC    XL8'0'        |     BLOCK/DEBLOCK - PH 2
+PPIINT   DC    XL8'0'        |     INITIALIZE SORT AND TREE - OSC
+*                            |
+PPICONV  DC    XL8'0'        |     CONVERT HEX TO CHAR FOR MESSAGE
+*                            |     PRINTOUT - GA, PH 1,PH 2, AND PH 3
+PPIEOF   DC    XL8'0'        |     EODAD FOR QSAM IN P1 AND MRG ONLY
+PPIRMA   DC    XL8'0'        |     MESSAGES FOR PH1 RUNNING PGM
+PPIRMC   DS    0CL8          |     MESSAGES FOR PH3 RUNNING PGM
+PPIRMB   DC    XL8'0'        |     MESSAGES FOR PH2 RUNNING PGM
+PPIAMA   DC    XL8'0'        |     MESSAGES FOR PH1 ASSIGNMENT PGM
+PPIAMC   DS    0CL8          |     MESSAGES FOR PH3 ASSIGNMENT PGM
+PPIAMB   DC    XL8'0'        |     MESSAGES FOR PH2 ASSIGNMENT PGM
+PPIOPEN  DC    XL8'0'        |     OPEN LIST - PH1, PH2, AND PH3
+*                            |     FIRST 4 BYTES - MODULE NAME
+*                            |     SECOND 4 BYTES -> LIST OF DCBS TO
+*                            |     BE OPENED.
+*                            |     FIRST ENTRY OF THE LIST IS THE NUMB
+*                            |     OF ENTRIES TO BE OPENED
+PPIX11   DC    XL8'0'        |     EXIT FOR
+PPIX31   DS    0CL8          |     USER INITIALIZATION
+PPIX21   DC    XL8'0'        |     FUNCTIONS
+PPIX15   DC    XL8'0'        |     EXIT FOR
+PPIX35   DS    0CL8          |     LOGICAL
+PPIX25   DC    XL8'0'        |     RECORD MODIFICATION
+PPIX17   DC    XL8'0'        |     EXIT FOR
+PPIX37   DS    0CL8          |     CLOSING USER DATA SETS
+PPIX27   DC    XL8'0'        |     AT END OF PHASE
+PPIX18   DC    XL8'0'        |     EXIT FOR
+PPIX38   DS    0CL8          |     READ ERROR
+PPIX28   DC    XL8'0'        |     PH2 OR PH3
+PPIX19   DC    XL8'0'        |     EXIT FOR
+PPIX39   DS    0CL8          |     WRITE ERROR
+PPIX29   DC    XL8'0'        |     PH2  OR PH3
+PPIX61   DC    XL8'0'        |     EXIT FOR EXTRACT
+PPIX16   DC    XL8'0'        V     EXIT FOR NMAX
+*
+*        END OF TABLE OF MODULES LOADED BY IERRC9
+*
+PPIADDCF DC    XL4'0'              -> CF INFO FOR MORE THAN
+*                                     TWELVE CONTROL FIELDS
+PPIDDSRT DC    CL4'SORT'           FOUR LETTER DDNAME PREFIX
+PPICHKAD DC    XL4'0'              CHECKPOINT MODULE ADDR
+PPIABC   DC    AL2(0)              DEFAULT ABEND CODE
+         DC    X'00'               RESERVED
+PPIABMNO DC    CL3'000'            MESSAGE NO ASSOCIATED WITH ABEND
+PPISTOPR DC    AL4(0)              STOP AFTER RECORD COUNT (STOPAFT)
+PPIDYND  DC    CL8' '              DEVICE TYPE FOR DYNAMIC ALLOCATION
+PPIDYNN  DC    AL2(0)              NUMBER OF DYN ALLOC WORK DATA SETS
+PPIDYNS  DC    AL4(0)              MEGABYTES OF DASD TO ALLOCATE
+PPIDYNP  DC    AL2(0)              % ADDITIONAL SPACE FACTOR TO ALLOC
+*                                  FOR SORT OVERHEAD AND FOR
+*                                  ESTIMATING NMAX
+PPIMDDN  DC    CL8' '              DDNAME FOR MESSAGE DATA SET
+PPIPDDN  DC    CL8' '              DDNAME FOR PARM DATA SET
+PPISVC   DC    H'0'                0 = NO SVC, 109, OR 200 - 255
+PPISVCE  DC    H'0'                SVC ESR NUMBER IF PPISVC = 109
+PPIWTOC  DC    XL4'00000000'       WTO ROUTING AND DESCRIPTOR CODES
+PPIWTOH  DC    CL18' '             JOBNAME, STEPNAME HEADER FOR WTO
+PPIUEXIT DC    XL4'00000000'       USER EXIT DATA PASSED TO E15,32,35
+*
+*        SORTWKXX I/O TRACING FACILITY ENTRIES
+*
+         DS    0H                  HALF WORD ALIGNMENT FOR INSTRUCTIONS
+PPITXEP  DS    0XL4                THIS WILL BE OVERLAID WITH A
+*                                  STM  R0,R15,PPITSAV WHEN THE
+*                                  EXCP TRACE IS OPERATIVE
+         BR    R1                  RETURN TO CALLER, TRACE INOPERATIVE
+         NOPR  0
+         L     R15,PPITDTE-PPISAVEA(,R13)  R15 -> EXCP TRACING MODULE
+         BR    R15                 BRANCH TO EXCP TRACING MODULE
+*                                  RETURN WILL BE VIA R1
+PPITWAI  DS    0XL4                THIS WILL BE OVERLAID WITH A
+*                                  STM  R0,R15,PPITSAV WHEN THE
+*                                  WAIT ON EXCP TRACE IS OPERATIVE
+         BR    R1                  RETURN TO CALLER, TRACE INOPERATIVE
+         NOPR  0
+         LCR   R1,R1               SIGNAL WAIT ENTRY TO IERDTE
+         L     R15,PPITDTE-PPISAVEA(,R13)  R15 -> EXCP TRACING MODULE
+         BR    R15                 BRANCH TO EXCP TRACING MODULE
+*                                  RETURN WILL BE VIA R1
+*
+PPITDTE  DC    A(0)                -> TRACING MODULE LOADED BY
+*                                     IERRCZ
+PPITECB  DC    A(0)                -> ECB (IERIOB)
+PPITSAV  DC    18F'0'              REGISTER SAVE AREA FOR TRACING
+*
+*        DASD BLKSIZE TABLE CALCULATED BY IERRCF
+*        FOR THE DASD SORTWORK UNIT TYPE SELECTED VIA
+*        JCL OR DYNAMIC ALLOCATION FOR THIS EXECUTION
+*
+PPIBLKTB DC    XL40'00'            UP TO TEN ENTRIES OF A HALF WORD
+*                                  BLKSIZE FOLLOWED BY A HALFWORD COUNT
+*                                  OF THE NUMBER OF BLKS PER TRACK
+*                                  IN DESCENDING ORDER WITH LAST ENTRY
+*                                  SET TO ZERO
+*         _________________________
+*        | 0(0)       | 2(2)       |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 4(4)       | 6(6)       |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 8(8)       | 10(A)      |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 12(C)      | 14(E)      |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 16(10)     | 18(12)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 20(14)     | 22(16)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 24(18)     | 26(1A)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 28(1C)     | 30(1E)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 32(20)     | 34(22)     |
+*        | BLKSIZE    | NO OF BLKS |
+*        |            | PER TRACK  |
+*        |____________|____________|
+*        | 36(24)     | 38(26)     |
+*        | H'0'       |            |
+*        | END OF TAB | END OF TAB |
+*        |____________|____________|
+*
+*        NUMBER OF SORT DIRECTORY BLOCKS PER TRACK CALC BY IERRCF
+*
+PPIDIRBK DC    H'0'                FOR BALN TECHNIQUE ONLY
+*
+*        MVS SYSTEM SERVICE ROUTINES
+*
+PPIPCNVT DC    A(0)                -> CVTPCNVT TTR -> MBBCCHHR
+PPIPRLTV DC    A(0)                -> CVTPRLTV MBBCCHHR -> TTR
+*
+PPILEN   EQU   *-IERRCA            LENGTH OF PPI
+*
+         AIF   ('&LIST' EQ 'YES').LAB4
+         POP   PRINT
+.LAB4    ANOP
+         MEXIT
+         MEND
+./ ADD NAME=SORTMERG 0101-20211-20211-1200-01073-01073-00000-RELEASE 00
+         MACRO
+         SORTMERG  &ABCODE=MSG,                                        X
+               &CHECK=YES,                                             X
+               &EQUALS=NO,                                             X
+               &DIAGSIM=NO,                                            X
+               &DYNALOC=(3390,6),                                      X
+               &DYNAPCT=10,                                            X
+               &DYNAUTO=YES,                                           X
+               &DYNSPC=10,                                             X
+               &ERET=ABEND,                                            X
+               &ESTAE=NO,                                              X
+               &EXECBKP=NO,                                            X
+               &EXITCK=WEAK,                                           X
+               &FSZEST=YES,                                            X
+               &LIST=YES,                                              X
+               &MAXLIM=2048K,                                          X
+               &MINLIM=256K,                                           X
+               &MSGCON=NONE,                                           X
+               &MSGDDN=SYSOUT,                                         X
+               &MSGPRT=ALL,                                            X
+               &PARMDDN=IERPARM,                                       X
+               &RESALL=64K,                                            X
+               &RESINV=96K,                                            X
+               &SIZE=512K,                                             X
+               &SMF=NO,                                                X
+               &SNAPCPI=NO,                                            X
+               &SNAPPPI=NO,                                            X
+               &SORTLIB=PRIVATE,                                       X
+               &TRACE=,                                                X
+               &RESET=,                                                X
+               &SORTDD=SORT,                                           X
+               &SVC=109,                                               X
+               &VERIFY=YES,                                            X
+               &WTODESC=7,                                             X
+               &WTOROUT=11
+.*
+.*       SORTMERG
+.*
+.*       COMPONENT ID - 360S-SM-023
+.*
+.*       INSTALLATION CUSTOMIZATION SUPPORT
+.*       OS/360 SORT/MERGE FOR MVS 3.8
+.*
+.*       GENERATE THE ASSEMBLER SOURCE FOR MODULE IERAM1 WHICH
+.*       SETS THE CONFIGURATION OPTIONS
+.*
+.*
+.*       DECLARE ALL VARIABLES
+.*
+.*       NOTE THESE FLAGS MUST REFLECT THE FLAG DEFINITIONS IN IERAM1
+.*
+         LCLB  &AM1RES1               1. ALLOCATED TO STOPAFT
+         LCLB  &AM1DYNA               2. DYNAUTO = YES
+         LCLB  &AM1DYNI               3. DYNAUTO = IGNWKDD
+         LCLB  &AM1EQU                4. EQUALS = YES
+         LCLB  &AM1ERET               5. ERET = ABEND
+         LCLB  &AM1ESTA               6. ESTAE = YES
+         LCLB  &AM1ECHK               7. EXITCK = STRONG
+         LCLB  &AM1FSEX               8. FSZEST = YES EXACT
+.*                                 +1
+         LCLB  &AM1LIST               9. LIST = YES
+         LCLB  &AM1RSET              10. RESET = YES
+         LCLB  &AM1SMFR              11. SMF = YES
+         LCLB  &AM1SMFL              12. SMF = FULL
+         LCLB  &AM1LIBS              13. SORTLIB = SYSTEM
+         LCLB  &AM1MAXS              14. SIZE/MAINSIZE/CORE=MAX
+         LCLB  &AM1ABMS              15. USE MSG NO FOR ABEND
+         LCLB  &AM1RES2              16.       RESERVED
+.*                                 +2
+         LCLB  &AM1CALL              17. ALL MESSAGES TO THE CONSOLE
+         LCLB  &AM1CCRT              18. CRITICAL MESSAGES TO THE CON
+         LCLB  &AM1PALL              19. ALL MESSAGES TO THE PRINTER
+         LCLB  &AM1PCRT              20. CRITICAL MESSAGES TO THE PRT
+         LCLB  &AM1RES3              21. ALLOCATED TO OPTION STMT
+         LCLB  &AM1RES4              22. ALLOCATED TO DEBUG STMT
+         LCLB  &AM1VSEQ              23. VERIFY=YES FOR SEQUENCE CHECK
+         LCLB  &AM1CHCK              24. CHECK=YES FOR RECORD COUNT
+.*                                 +3
+         LCLB  &AM1DIAG              25. DIAGNOSTICS ON SORTDIAG
+         LCLB  &AM1DSIM              26. DIAGSIM = YES(DIAGS ON SYSOUT)
+         LCLB  &AM1TEXC              27. TRACE EXCP
+         LCLB  &AM1TWAI              28. TRACE COMPLETION OF EXCP
+         LCLB  &AM1TMOD              29. TRACE MODULE FLOW
+         LCLB  &AM1TSCP              30. SNAP THE CPI
+         LCLB  &AM1TSPP              31. SNAP THE PPI
+         LCLB  &AM1TBRK              32. EXECUTE BREAKPOINTS
+.*
+         LCLC  &AM1ABC             ABEND CODE IF NOT MESSAGE NO OPTION
+         LCLC  &AM1DYND            DEVICE TYPE FOR DYNAMIC ALLOCATION
+         LCLC  &AM1DYNN            NUMBER OF DYNALLOC WORK DATA SETS
+         LCLC  &AM1DYNS            MEGABYTES OF DASD TO ALLOCATE
+         LCLC  &AM1DYNP            % INCR FACTOR IN SPACE CALC OVERHEAD
+         LCLC  &AM1MAXL            MAXIMUM STORAGE LIMIT FOR SORT/MERGE
+         LCLC  &AM1MINL            MINIMUM STORAGE LIMIT FOR SORT/MERGE
+         LCLC  &AM1RMAX            RESVD STORAGE - SIZE = MAX, EXEC
+         LCLC  &AM1RMAI            RESVD STORAGE - SIZE = MAX, INVOKED
+         LCLC  &AM1STOR            SORT STORAGE SIZE
+         LCLC  &AM1MDDN            DDNAME FOR MESSAGE DATA SET
+         LCLC  &AM1PDDN            DDAME FOR PARAMETER DDN
+         LCLC  &AM1SDDN            DEFAULT DDN PREFIX
+         LCLC  &AM1SVC             0 = NO SVC, 109, OR 200 - 255
+         LCLC  &AM1SVCE            SVC ESR NUMBER
+         LCLC  &AM1WTOR            WTO ROUTING CODES
+         LCLC  &AM1WTOD            WTO DESCRIPTOR CODES
+.*
+         LCLC  &MP
+         LCLA  &I
+         LCLA  &J
+         LCLB  &MEG
+         LCLB  &KILO
+         LCLB  &NOGEN
+         LCLB  &DESC(16)
+         LCLB  &ROUT(16)
+.*
+.*       SET MESSAGE PREFIX
+.*
+&MP      SETC  'IEISORT'           MSG PREFIX
+.*
+.**********************************************************************
+.*
+.*       GENERATE BANNER FOR LISTING
+.*
+.**********************************************************************
+.*
+AM1      TITLE 'IERAM1 - OS/360 SORT/MERGE - 360S-SM-023'
+         MNOTE *,'                                             '
+         MNOTE *,'          360S-SM-023 OS/360 SORT/MERGE FOR MVS 3.8'
+         MNOTE *,'          VERSION - 1.01                     '
+         MNOTE *,'                                             '
+         MNOTE *,'          INSTALLATION CONFIGURATION         '
+         MNOTE *,'                                             '
+         MNOTE *,'          SORT/MERGE OPTIONS -               '
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST DYNAUTO OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--DYNAUTO=--+--IGNWKDD--+-----><
+.*                     +--YES------+
+.*                     +--NO-------+
+.*
+         AIF   ('&DYNAUTO' NE 'IGNWKDD' AND '&DYNAUTO' NE 'YES' AND    X
+               '&DYNAUTO' NE 'NO').ERR01
+&AM1DYNA SETB ('&DYNAUTO' EQ 'YES' OR '&DYNAUTO' EQ 'IGNWKDD')
+&AM1DYNI SETB ('&DYNAUTO' EQ 'IGNWKDD' )
+         MNOTE  *,'DYNAUTO SET TO &DYNAUTO'
+         AGO   .NEXT01
+.ERR01   MNOTE 8,'&MP.01 INVALID DYNAUTO OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST DYNALOC OPTION
+.*
+.**********************************************************************
+.*
+.*
+.*       >>--DYNALOC=--+--DEVICE NAME---------+--><
+.*                     +--(DEVICE NAME)-------+
+.*                     +--(DEVICE NAME,N)-----+
+.*                     +--(,N--)--------------+
+.*
+.*                     DEVICE NAME  SPECIFIES THE DEVICE NAME FOR
+.*                                  THE DYNAMICALLY ALLOCATED
+.*                                  SORTWKDD DATA SETS. GROUP NAMES
+.*                                  MAY BE SPECIFIED BUT MAY RESULT
+.*                                  IN AN ALLOCATION ERROR IF THE
+.*                                  GROUP ENCOMPASSES DEVICES WITH
+.*                                  DIFFERENT GEOMETRY
+.*                     N            SPECIFIES THE NUMBER OF NUMBER
+.*                                  OF SORTWKDD DATA SETS TO BE
+.*                                  ALLOCATED
+.*
+.NEXT01  AIF   (T'&DYNALOC EQ 'O').ERR03   NULL VALUE ?
+         AIF   (N'&DYNALOC GT 2).ERR03   MORE THAN TWO SUBPARMS ?
+&AM1DYND SETC  '&DYNALOC(1)'        GET DEVICE TYPE
+         AIF   (T'&DYNALOC(1) NE 'O').NEXT01A
+&AM1DYND SETC  '3390'               ASSIGN DEFAULT DEVICE TYPE
+.NEXT01A AIF   ('&AM1DYND'(1,1) GT '0').NEXT01B  GENERIC GROUP ?
+.*
+.*       A GENERIC GROUP NAME HAS BEEN PROVIDED
+.*
+.*       ISSUE A WARNING THAT THIS MAY RESULT IN AN ALLOCATION
+.*       OF DEVICES WITH A DIFFERENT DEVICE GEOMETRY RESULTING
+.*       IN THE SORT FAILING DURING INITIALIZATION
+.*
+.ERR04   MNOTE 4,'&MP.04 DYNALOC HAS BEEN SET TO A USER ASSIGNED'
+         MNOTE *,'              GROUP NAME OR ESOTERIC NAME'
+         MNOTE *,'              THIS CAN RESULT IN THE ALLOCATION OF' '
+         MNOTE *,'              DIFFERENT DASD UNIT TYPES RESULTING'
+         MNOTE *,'              IN A DYNAMIC ALLOCATION ERROR'
+.NEXT01B ANOP
+         AIF   (N'&DYNALOC NE 2).NEXT01C  NO OF DATA SETS PROVIDED ?
+&AM1DYNN SETC  '&DYNALOC(2)'
+         AGO   .NEXT01G
+.NEXT01C ANOP
+&AM1DYNN SETC  '7'            SET DEFAULT OF 3
+.NEXT01G ANOP
+.*
+.*       ENSURE NUMBER OF DATA SETS VALUE IS NUMERIC
+.*
+&J       SETA  K'&AM1DYNN          L'&AM1DYNN
+&I       SETA  1                   LOOP COUNTER
+.NEXT01D AIF   (&I GT &J).NEXT01H
+         AIF   ('&AM1DYNN'(&I,1) LT '0' OR                             X
+               '&AM1DYNN'(&I,1) GT '9').ERR03    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT01D            LOOP
+.*
+.NEXT01H AIF   (&AM1DYNN GT 2).NEXT01F  AT LEAST 3 SORTWK DATA SETS ?
+.ERR02   MNOTE 8,'&MP.02 A MINIMUM OF 3 SORTWKDD DATA SETS MUST BE ALLOX
+               CATTED'
+&NOGEN   SETB  1
+.NEXT01F MNOTE  *,'DYNALOC DEVICE UNIT TYPE SET TO &AM1DYND'
+        MNOTE  *,'DYNALOC NUMBER OF SORTWORK DATA SETS SET TO &AM1DYNN'
+         AGO   .NEXT02
+.ERR03   MNOTE 8,'&MP.03 INVALID DYNALOC OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST DYNAPCT OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--DYNAPCT=--+--N--+-----><
+.*
+.NEXT02  AIF   (T'&DYNAPCT EQ 'O').ERR05   NULL VALUE ?
+&AM1DYNP SETC  '&DYNAPCT'
+.*
+.*       ENSURE DYNAPCT % VALUE IS NUMERIC
+.*
+&I       SETA  1                   LOOP COUNTER
+.NEXT02A AIF   (&I GT K'&AM1DYNP).NEXT02B
+         AIF   ('&AM1DYNP'(&I,1) LT '0' OR                             X
+               '&AM1DYNP'(&I,1) GT '9').ERR05    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT02A            LOOP
+.*
+.ERR05   MNOTE 8,'&MP.05 INVALID DYNAPCT OPTION'
+&NOGEN   SETB  1
+         AGO   .NEXT03
+.*
+.NEXT02B MNOTE *,'DYNAPCT % ALLOCATION INCREASE SET TO &AM1DYNP'
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST DYNSPC OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--DYNSPC=--+--N--+-----><
+.*
+.NEXT03  AIF   (T'&DYNSPC EQ 'O').ERR06   NULL VALUE ?
+&AM1DYNS SETC  '&DYNSPC'
+.*
+.*       ENSURE DYNSPC VALUE IS NUMERIC
+.*
+&I       SETA  1                   LOOP COUNTER
+.NEXT03A AIF   (&I GT K'&AM1DYNS).NEXT03B
+         AIF   ('&AM1DYNS'(&I,1) LT '0' OR                             X
+               '&AM1DYNS'(&I,1) GT '9').ERR06    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT03A            LOOP
+.*
+.ERR06   MNOTE 8,'&MP.06 INVALID DYNSPC OPTION'
+&NOGEN   SETB  1
+         AGO   .NEXTEQU
+.*
+.NEXT03B MNOTE *,'DYNSPC SET TO &AM1DYNS MEGABYTES'
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST EQUALS OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--EQUALS=--+--NO---+-----><
+.*                    +--YES--+
+.*
+.NEXTEQU AIF   (T'&EQUALS EQ 'O').ERR07   NULL VALUE ?
+         AIF   ('&EQUALS' NE 'NO' AND '&EQUALS' NE 'YES').ERR07
+&AM1EQU  SETB  ('&EQUALS' EQ 'YES')
+         AIF   (NOT &AM1EQU).NEXT31
+         MNOTE *,'WARNING - EQUALS=YES NOT SUPPORTED IN THIS RELEASE'
+.NEXT31  MNOTE *,'EQUALS SET TO &EQUALS'
+         AGO   .NEXTVER
+.ERR07   MNOTE 8,'&MP.07 INVALID EQUALS OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST VERIFY OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--VERIFY=--+--NO---+-----><
+.*                    +--YES--+
+.*
+.NEXTVER AIF   (T'&VERIFY EQ 'O').ERR35  NULL VALUE ?
+         AIF   ('&VERIFY' NE 'NO' AND '&VERIFY' NE 'YES').ERR35
+&AM1VSEQ SETB  ('&VERIFY' EQ 'YES')
+.NEXT32  MNOTE *,'VERIFY SET TO &VERIFY'
+         AGO   .NEXTCHK
+.ERR35   MNOTE 8,'&MP.35 INVALID VERIFY OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST CHECK OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--CHECK=--+--NO---+-----><
+.*                   +--YES--+
+.*
+.NEXTCHK AIF   (T'&CHECK EQ 'O').ERR36  NULL VALUE ?
+         AIF   ('&CHECK' NE 'NO' AND '&CHECK' NE 'YES').ERR36
+&AM1CHCK SETB  ('&CHECK' EQ 'YES')
+         MNOTE *,'CHECK SET TO &CHECK'
+         AGO   .NEXT04
+.ERR36   MNOTE 8,'&MP.36 INVALID CHECK OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST ERET OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--ERET=--+--RC16-----+-----><
+.*                  +--ABEND----+
+.*
+.NEXT04  AIF   (T'&ERET EQ 'O').ERR08   NULL VALUE ?
+         AIF   ('&ERET' NE 'RC16' AND '&ERET' NE 'ABEND').ERR08
+&AM1ERET SETB  ('&ERET' EQ 'ABEND')
+         MNOTE *,'ERET OPTION SET TO &ERET'
+         AGO   .NEXT05
+.ERR08   MNOTE 8,'&MP.08 INVALID ERET OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST ESTAE OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--ESTAE=--+--NO-----+-----><
+.*                   +--YES----+
+.*
+.NEXT05  AIF   (T'&ESTAE EQ 'O').ERR09   NULL VALUE ?
+         AIF   ('&ESTAE' NE 'YES' AND '&ESTAE' NE 'NO').ERR09
+&AM1ESTA SETB  ('&ESTAE' EQ 'YES')
+         AIF   (NOT &AM1ESTA).NEXT05A
+         MNOTE *,'WARNING - ESTAE=YES NOT SUPPORTED IN THIS RELEASE'
+.NEXT05A MNOTE *,'ESTAE SET TO &ESTAE'
+         AGO   .NEXT06
+.ERR09   MNOTE 8,'&MP.09 INVALID ESTAE OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST EXITCK OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--EXITCK=--+--WEAK----+-----><
+.*                    +--STRONG--+
+.*
+.NEXT06  AIF   (T'&EXITCK EQ 'O').ERR10   NULL VALUE ?
+         AIF   ('&EXITCK' NE 'WEAK' AND '&EXITCK' NE 'STRONG').ERR10
+&AM1ECHK SETB  ('&EXITCK' EQ 'STRONG')
+.NEXT06A MNOTE *,'EXITCK SET TO &EXITCK'
+         AIF   (NOT &AM1ECHK).NEXT07
+        MNOTE *,'WARNING - EXITCK=STRONG NOT SUPPORTED IN THIS RELEASE'
+         AGO   .NEXT07
+.ERR10   MNOTE 8,'&MP.10 INVALID EXITCK OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST FSZEST OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--FSZEST=--+--YES--+-----><
+.*                    +--NO---+
+.*
+.NEXT07  AIF   (T'&FSZEST EQ 'O').ERR11   NULL VALUE ?
+         AIF   ('&FSZEST' NE 'YES' AND '&FSZEST' NE 'NO').ERR11
+&AM1FSEX SETB  ('&FSZEST' EQ 'YES')
+.NEXT07A MNOTE *,'FSZEST SET TO &FSZEST'
+         AIF   (&AM1FSEX).NEXT08
+         MNOTE *,'WARNING - FSZEST=NO NOT SUPPORTED IN THIS RELEASE'
+         AGO   .NEXT08
+.ERR11   MNOTE 8,'&MP.11 INVALID FSZEST OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST LIST OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--LIST=--+--YES--+-----><
+.*                  +--NO---+
+.*
+.NEXT08  AIF   (T'&LIST EQ 'O').ERR12   NULL VALUE ?
+         AIF   ('&LIST' NE 'YES' AND '&LIST' NE 'NO').ERR12
+&AM1LIST SETB  ('&LIST' EQ 'YES')
+         MNOTE *,'LIST SET TO &LIST'
+         AGO   .NEXT09
+.ERR12   MNOTE 8,'&MP.12 INVALID LIST OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SMF OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SMF=--+--NO-----+-----><
+.*                 +--SHORT--+
+.*                 +--FULL---+
+.*
+.NEXT09  AIF   (T'&SMF EQ 'O').ERR13   NULL VALUE ?
+         AIF   ('&SMF' NE 'NO' AND '&SMF' NE 'SHORT' AND               X
+               '&SMF' NE 'YES').ERR13
+&AM1SMFR SETB  ('&SMF' EQ 'SHORT' OR '&SMF' EQ 'YES')
+&AM1SMFR SETB  ('&SMF' EQ 'FULL' OR '&SMF' EQ 'YES')
+&AM1SMFL SETB  ('&SMF' EQ 'FULL')
+.NEXT09A MNOTE *,'SMF SET TO &SMF'
+         AIF   (NOT &AM1SMFR).NEXT10
+         MNOTE *,'WARNING - SMF NOT SUPPORTED IN THIS RELEASE'
+         AGO   .NEXT10
+.ERR13   MNOTE 8,'&MP.13 INVALID SMF OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SORTLIB OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SORTLIB=--+--PRIVATE--+-----><
+.*                     +--SYSTEM---+
+.*
+.NEXT10  AIF   (T'&SORTLIB EQ 'O').ERR14   NULL VALUE ?
+         AIF   ('&SORTLIB' NE 'PRIVATE' AND '&SORTLIB' NE 'SYSTEM'     X
+               ).ERR14
+&AM1LIBS SETB  ('&SORTLIB' EQ 'SYSTEM')
+         MNOTE *,'SORTLIB SET TO &SORTLIB'
+         AGO   .NEXT11
+.ERR14   MNOTE 8,'&MP.14 INVALID SORTLIB OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST ABCODE OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--ABCODE=--+--MSG--+-----><
+.*                    +--N----+
+.*
+.NEXT11  AIF   (T'&ABCODE EQ 'O').ERR15   NULL VALUE ?
+&AM1ABC  SETC  '0'
+&AM1ABMS SETB  ('&ABCODE' EQ 'MSG')
+         AIF   (&AM1ABMS).NEXT11A  IF NOT MSG THEN MUST BE NUMERIC
+.*
+.*       ENSURE ABCODE MSG NUMBER IS NUMERIC
+.*       MUST BE WITHIN THE RANGE 1 - 99
+.*
+&J       SETA  K'&ABCODE           L'&ABCODE
+&I       SETA  1                   LOOP COUNTER
+.NEXT11B AIF   (&I GT &J).NEXT11C
+         AIF   ('&ABCODE'(&I,1) LT '0' OR                              X
+               '&ABCODE'(&I,1) GT '9').ERR15    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT11B            LOOP
+.NEXT11C ANOP
+&AM1ABC  SETC  '&ABCODE'
+.*       CHECK VALUE LIMITS
+         AIF   (&AM1ABC LT 1).ERR15
+         AIF   (&AM1ABC GT 99).ERR15
+         MNOTE *,'ABCODE NUMBER SET TO &AM1ABC'
+         AGO   .NEXT12
+.NEXT11A MNOTE *,'ABCODE SET TO MSG'
+         AGO   .NEXT12
+.ERR15   MNOTE 8,'&MP.15 INVALID ABCODE OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST MSGCON OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--MSGCON=--+--NONE------+-----><
+.*                    +--CRITICAL--+
+.*                    +--ALL-------+
+.*
+.NEXT12  AIF   (T'&MSGCON EQ 'O').ERR16   NULL VALUE ?
+         AIF   ('&MSGCON' NE 'NONE' AND '&MSGCON' NE 'CRITICAL' AND    X
+               '&MSGCON' NE 'ALL').ERR16
+&AM1CALL SETB  ('&MSGCON' EQ 'ALL')
+&AM1CCRT SETB  ('&MSGCON' EQ 'CRITICAL')
+         MNOTE *,'MSGCON SET TO &MSGCON'
+         AGO   .NEXT13
+.ERR16   MNOTE 8,'&MP.16 INVALID MSGCON OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST MSGPRT OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--MSGPRT=--+--ALL-------+-----><
+.*                    +--CRITICAL--+
+.*                    +--NONE------+
+.*
+.NEXT13  AIF   (T'&MSGPRT EQ 'O').ERR17   NULL VALUE ?
+         AIF   ('&MSGPRT' NE 'NONE' AND '&MSGPRT' NE 'CRITICAL' AND    X
+               '&MSGPRT' NE 'ALL').ERR17
+&AM1PALL SETB  ('&MSGPRT' EQ 'ALL')
+&AM1PCRT SETB  ('&MSGPRT' EQ 'CRITICAL')
+         MNOTE *,'MSGPRT SET TO &MSGPRT'
+         AGO   .NEXT14
+.ERR17   MNOTE 8,'&MP.17 INVALID MSGPRT OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST MSGDDN OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--MSGDDN=--+--SYSOUT--+-----><
+.*                    +--DDNAME--+
+.*
+.NEXT14  AIF   (T'&MSGDDN EQ 'O').ERR18   NULL VALUE ?
+&AM1MDDN SETC  '&MSGDDN'
+.*
+.*       VALIDATION CODE FOR DDNAME CHARS TO BE PLACED HERE
+.*
+         AIF   (K'&MSGDDN GT 8).ERR18  NO MORE THAN 8 CHARS
+         MNOTE *,'MSGDDN SET TO &MSGDDN'
+         AGO   .NEXT15
+.ERR18   MNOTE 8,'&MP.18 INVALID MSGDDN OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SORTDD OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SORTDD=--+--SORT-----------+-----><
+.*                    +--DDNAME PREFIX--+
+.*
+.NEXT15  AIF   (T'&SORTDD EQ 'O').ERR19   NULL VALUE ?
+&AM1SDDN SETC  '&SORTDD'
+.*
+.*       VALIDATION CODE FOR DDNAME CHARS TO BE PLACED HERE
+.*
+         AIF   (K'&SORTDD GT 4).ERR19  NO MORE THAN 4 CHARS
+         MNOTE *,'SORTDD SET TO &SORTDD'
+         AGO   .NEXT16
+.ERR19   MNOTE 8,'&MP.19 INVALID SORTDD OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST PARMDDN OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--PARMDDN=--+--IERPARM--+--+--><
+.*                     +--DDNAME---+--+
+.*
+.NEXT16  AIF   (T'&PARMDDN EQ 'O').ERR20   NULL VALUE ?
+&AM1PDDN SETC  '&PARMDDN'
+.*
+.*       VALIDATION CODE FOR DDNAME CHARS TO BE PLACED HERE
+.*
+         AIF   (K'&PARMDDN GT 8).ERR20  NO MORE THAN 8 CHARS
+         MNOTE *,'PARMDDN SET TO &PARMDDN'
+         AGO   .NEXT17
+.ERR20   MNOTE 8,'&MP.20 INVALID PARMDDN OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST MAXLIM OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--MAXLIM=--+--2048K--+-----><
+.*                    +--N------+--+
+.*                    +--NK-----+--+
+.*                    +--NM-----+--+
+.*
+.NEXT17  AIF   (T'&MAXLIM EQ 'O').ERR21   NULL VALUE ?
+&MEG     SETB  0
+&KILO    SETB  0
+.*
+.*       ENSURE MAXLIM IS NUMERIC
+.*
+&J       SETA  K'&MAXLIM           L'&MAXLIM
+&KILO    SETB  ('&MAXLIM'(&J,1) EQ 'K')
+&MEG     SETB  ('&MAXLIM'(&J,1) EQ 'M')
+&J       SETA  &J-1                DO NOT TEST LAST CHAR FOR NUMERIC
+         AIF   (&KILO OR &MEG).NEXT17A
+&J       SETA  &J+1
+&I       SETA  1
+.NEXT17A AIF   (&I GT &J).NEXT17B
+         AIF   ('&MAXLIM'(&I,1) LT '0' OR                              X
+               '&MAXLIM'(&I,1) GT '9').ERR21    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT17A            LOOP
+.NEXT17B ANOP
+         MNOTE *,'MAXLIM SET TO &MAXLIM'
+         AIF   (NOT &MEG).NEXT17C
+&AM1MAXL SETC  '&MAXLIM'(1,&J).'*1048576'  CONVERT TO MBYTES
+         AGO   .NEXT18
+.NEXT17C AIF   (NOT &KILO).NEXT17D
+&AM1MAXL SETC  '&MAXLIM'(1,&J).'*1024'     CONVERT TO KBYTES
+         AGO   .NEXT18
+.NEXT17D ANOP
+&AM1MAXL SETC  '&MAXLIM'                   ASSIGN VALUE
+         AGO   .NEXT18
+.ERR21   MNOTE 8,'&MP.21 INVALID MAXLIM OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST MINLIM OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--MINLIM=--+--256K--+--+--><
+.*                    +--N-----+--+
+.*                    +--NK----+--+
+.*                    +--NM----+--+
+.*
+.NEXT18  AIF   (T'&MINLIM EQ 'O').ERR22   NULL VALUE ?
+&MEG     SETB  0
+&KILO    SETB  0
+.*
+.*       ENSURE MINLIM IS NUMERIC
+.*
+&J       SETA  K'&MINLIM           L'&MINLIM
+&KILO    SETB  ('&MINLIM'(&J,1) EQ 'K')
+&MEG     SETB  ('&MINLIM'(&J,1) EQ 'M')
+&J       SETA  &J-1                DO NOT TEST LAST CHAR FOR NUMERIC
+         AIF   (&KILO OR &MEG).NEXT18A
+&J       SETA  &J+1
+&I       SETA  1
+.NEXT18A AIF   (&I GT &J).NEXT18B
+         AIF   ('&MINLIM'(&I,1) LT '0' OR                              X
+               '&MINLIM'(&I,1) GT '9').ERR22    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT18A            LOOP
+.NEXT18B ANOP
+         MNOTE *,'MINLIM SET TO &MINLIM'
+         AIF   (NOT &MEG).NEXT18C
+&AM1MINL SETC  '&MINLIM'(1,&J).'*1048576'  CONVERT TO MBYTES
+         AGO   .NEXT19
+.NEXT18C AIF   (NOT &KILO).NEXT18D
+&AM1MINL SETC  '&MINLIM'(1,&J).'*1024'     CONVERT TO KBYTES
+         AGO   .NEXT19
+.NEXT18D ANOP
+&AM1MINL SETC  '&MINLIM'                   ASSIGN VALUE, NO SUFFIX
+         AGO   .NEXT19
+.ERR22   MNOTE 8,'&MP.22 INVALID MINLIM OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST RESALL OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--RESALL=--+--64K--+--+--><
+.*                    +--N----+--+
+.*                    +--NK---+--+
+.*                    +--NM---+--+
+.*
+.NEXT19  AIF   (T'&RESALL EQ 'O').ERR23   NULL VALUE ?
+.*
+.*       ENSURE RESALL IS NUMERIC
+.*
+&J       SETA  K'&RESALL           L'&RESALL
+&KILO    SETB  ('&RESALL'(&J,1) EQ 'K')
+&MEG     SETB  ('&RESALL'(&J,1) EQ 'M')
+&J       SETA  &J-1                DO NOT TEST LAST CHAR FOR NUMERIC
+         AIF   (&KILO OR &MEG).NEXT19A
+&J       SETA  &J+1
+&I       SETA  1
+.NEXT19A AIF   (&I GT &J).NEXT19B
+         AIF   ('&RESALL'(&I,1) LT '0' OR                              X
+               '&RESALL'(&I,1) GT '9').ERR23    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT19A            LOOP
+.NEXT19B ANOP
+         MNOTE *,'RESALL SET TO &RESALL'
+.*
+.*       APPLY K OR M SUFFIX
+.*
+         AIF   (NOT &MEG).NEXT19C
+&AM1RMAX SETC  '&RESALL'(1,&J).'*1048576'  CONVERT TO MBYTES
+         AGO   .NEXT20
+.NEXT19C AIF   (NOT &KILO).NEXT19D
+&AM1RMAX SETC  '&RESALL'(1,&J).'*1024'     CONVERT TO KBYTES
+         AGO   .NEXT20
+.NEXT19D ANOP
+&AM1RMAX SETC  '&RESALL'                   ASSIGN VALUE, NO SUFFIX
+         AGO   .NEXT20
+.ERR23   MNOTE 8,'&MP.23 INVALID RESALL OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST RESINV OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--RESINV=--+--96K--+--+--><
+.*                    +--N----+--+
+.*                    +--NK---+--+
+.*                    +--NM---+--+
+.*
+.NEXT20  AIF   (T'&RESINV EQ 'O').ERR24   NULL VALUE ?
+.*
+.*       ENSURE RESINV IS NUMERIC
+.*
+&J       SETA  K'&RESINV           L'&RESINV
+&KILO    SETB  ('&RESINV'(&J,1) EQ 'K')
+&MEG     SETB  ('&RESINV'(&J,1) EQ 'M')
+&J       SETA  &J-1                DO NOT TEST LAST CHAR FOR NUMERIC
+         AIF   (&KILO OR &MEG).NEXT20A
+&J       SETA  &J+1
+&I       SETA  1
+.NEXT20A AIF   (&I GT &J).NEXT20B
+         AIF   ('&RESINV'(&I,1) LT '0' OR                              X
+               '&RESINV'(&I,1) GT '9').ERR24    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT20A            LOOP
+.NEXT20B ANOP
+         MNOTE *,'RESINV SET TO &RESINV'
+.*
+.*       APPLY K OR M SUFFIX
+.*
+         AIF   (NOT &MEG).NEXT20C
+&AM1RAMI SETC  '&RESINV'(1,&J).'*1048576'  CONVERT TO MBYTES
+         AGO   .NEXT21
+.NEXT20C AIF   (NOT &KILO).NEXT20D
+&AM1RMAI SETC  '&RESINV'(1,&J).'*1024'     CONVERT TO KBYTES
+         AGO   .NEXT21
+.NEXT20D ANOP
+&AM1RMAI SETC  '&RESINV'                   ASSIGN VALUE, NO SUFFIX
+         AGO   .NEXT21
+.ERR24   MNOTE 8,'&MP.24 INVALID RESINV OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SIZE OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SIZE=--+--256K--+--+--><
+.*                  +--N----+--+
+.*                  +--NK---+--+
+.*                  +--NM---+--+
+.*                  +--MAX--+--+
+.*
+.NEXT21  AIF   (T'&SIZE EQ 'O').ERR25   NULL VALUE ?
+&AM1MAXS SETB  ('&SIZE' EQ 'MAX')
+         AIF   (NOT &AM1MAXS).NEXT21F
+&AM1STOR SETC  '0'                      &AM1STOR=0 FOR SIZE=MAX
+         MNOTE *,'SIZE SET TO &SIZE'
+         AGO   .NEXT22
+.*
+.*       ENSURE SIZE OPTION IS NUMERIC
+.*
+.NEXT21F ANOP
+&J       SETA  K'&SIZE             L'&SIZE
+&KILO    SETB  ('&SIZE'(&J,1) EQ 'K')
+&MEG     SETB  ('&SIZE'(&J,1) EQ 'M')
+&J       SETA  &J-1                DO NOT TEST LAST CHAR FOR NUMERIC
+         AIF   (&KILO OR &MEG).NEXT21A
+&J       SETA  &J+1
+&I       SETA  1
+.NEXT21A AIF   (&I GT &J).NEXT21B
+         AIF   ('&SIZE'(&I,1) LT '0' OR                                X
+               '&SIZE'(&I,1) GT '9').ERR25    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT21A            LOOP
+.NEXT21B ANOP
+         MNOTE *,'SIZE SET TO &SIZE'
+.*
+.*       APPLY K OR M SUFFIX
+.*
+         AIF   (NOT &MEG).NEXT21C
+&AM1STOR SETC  '&SIZE'(1,&J).'*1048576'    CONVERT TO MBYTES
+         AGO   .NEXT22
+.NEXT21C AIF   (NOT &KILO).NEXT21D
+&AM1STOR SETC  '&SIZE'(1,&J).'*1024'       CONVERT TO KBYTES
+         AGO   .NEXT22
+.NEXT21D ANOP
+&AM1STOR SETC  '&SIZE'                     ASSIGN VALUE, NO SUFFIX
+         AGO   .NEXT22
+.ERR25   MNOTE 8,'&MP.25 INVALID SIZE OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SVC OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SVC=--+--109--------+-----><
+.*                 +--N----------+-----><
+.*                 +--(109,ALT)--+
+.*                 +--(,ALT)-----+
+.*
+.NEXT22  ANOP
+&AM1SVCE SETC  '17'                DEFAULT NUMBER
+         AIF   (T'&SVC EQ 'O').ERR26  NULL VALUE ? ERROR
+         AIF   (N'&SVC GT 2).ERR26    MORE THAN 2 SUB PARAMETERS ?
+         AIF   (N'&SVC EQ 1).NEXT22A
+         AIF   ('&SVC(2)' NE 'ALT').ERR26
+&AM1SVCE SETC  '38'                ALT VALUE
+.*
+.*       ENSURE SVC NUMBER IS NUMERIC
+.*
+.NEXT22A ANOP
+&AM1SVC  SETC  '&SVC(1)'
+&J       SETA  K'&SVC(1)           L'&SVC(1)
+         AIF   (&J EQ 0).NEXT22D   NULL VALUE ?
+&I       SETA  1                   LOOP COUNTER
+.NEXT22B AIF   (&I GT &J).NEXT22C
+         AIF   ('&SVC(1)'(&I,1) LT '0' OR                              X
+               '&SVC(1)'(&I,1) GT '9').ERR26    TEST FOR NUMERIC
+&I       SETA  &I+1                INCR LOOP COUNTER
+         AGO   .NEXT22B            LOOP
+.NEXT22D ANOP
+&AM1SVC  SETC  '109'               DEFAULT VALUE
+.NEXT22C ANOP                      NO MSG IF NO SMF
+         AIF   (&AM1SVC EQ 0 OR &AM1SVC EQ 109).NEXT22G
+         AIF   (&AM1SVC LT 200 OR &AM1SVC GT 255).ERR26
+.NEXT22G ANOP                      VALID SVC NUMBER
+         AIF   (NOT &AM1SMFR AND NOT &AM1SMFL).NEXT23
+         MNOTE *,'SVC SET TO &SVC'
+         AGO   .NEXT23
+.ERR26   MNOTE 8,'&MP.26 INVALID SVC OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST WTODESC OPTION
+.*
+.**********************************************************************
+.*
+.*                           +-,--+
+.*                           V    |
+.*       >>--WTODESC=--+--(--N----+--)--+-----><
+.*
+.NEXT23  AIF   (T'&WTODESC EQ 'O').ERR27  NULL VALUE ?
+&I       SETA  1
+.NEXT23A AIF  (&I GT N'&WTODESC).NEXT23B
+&J       SETA  &WTODESC(&I)        CONVERT VALUE
+         AIF   (&J LT 3).ERR27     WITHIN VALID RANGE ?
+         AIF   (&J GT 16).ERR27
+&DESC(&J) SETB  1                  SET FLAG
+&I       SETA  &I+1                INCR PTR
+         AGO   .NEXT23A            LOOP
+.NEXT23B MNOTE *,'WTODESC SET TO &WTODESC'
+         AGO   .NEXT24
+.ERR27   MNOTE 8,'&MP.27 INVALID WTODESC OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST WTOROUT OPTION
+.*
+.**********************************************************************
+.*
+.*                           .-,--.
+.*                           V    |
+.*       >>--WTOROUT=--+--(--N----+--)--+-----><
+.*
+.NEXT24  AIF   (T'&WTOROUT EQ 'O').ERR28  NULL VALUE ?
+&I       SETA  1
+.NEXT24A AIF  (&I GT N'&WTOROUT).NEXT24B
+&J       SETA  &WTOROUT(&I)        CONVERT VALUE
+         AIF   (&J LT 2).ERR28     WITHIN VALID RANGE ?
+         AIF   (&J GT 16).ERR28
+&ROUT(&J) SETB  1                  SET FLAG
+&I       SETA  &I+1                INCR PTR
+         AGO   .NEXT24A            LOOP
+.NEXT24B MNOTE *,'WTOROUT SET TO &WTOROUT'
+         AGO   .NEXT25
+.ERR28   MNOTE 8,'&MP.28 INVALID WTOROUT OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST DIAGSIM OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--DIAGSIM=--+--NO---+-----><
+.*                     +--YES--+
+.*
+.NEXT25  AIF   (T'&DIAGSIM EQ 'O').ERR29  NULL VALUE ?
+         AIF   ('&DIAGSIM' NE 'NO' AND '&DIAGSIM' NE 'YES').ERR29
+&AM1DSIM SETB  ('&DIAGSIM' EQ 'YES')
+         MNOTE *,'DIAGSIM SET TO &DIAGSIM'
+         AGO   .NEXT26
+.ERR29   MNOTE 8,'&MP.29 INVALID DIAGSIM OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST EXECBKP OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--EXECBKP=--+--NO---+-----><
+.*                     +--YES--+
+.*
+.NEXT26  AIF   (T'&EXECBKP EQ 'O').ERR30  NULL VALUE ?
+         AIF   ('&EXECBKP' NE 'NO' AND '&EXECBKP' NE 'YES').ERR30
+&AM1TBRK SETB  ('&EXECBKP' EQ 'YES')
+         MNOTE *,'EXECBKP SET TO &EXECBKP'
+         AGO   .NEXT27
+.ERR30   MNOTE 8,'&MP.30 INVALID EXECBKP OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SNAPCPI OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SNAPCPI=--+--NO---+-----><
+.*                     +--YES--+
+.*
+.NEXT27  AIF   (T'&SNAPCPI EQ 'O').ERR31  NULL VALUE ?
+         AIF   ('&SNAPCPI' NE 'NO' AND '&SNAPCPI' NE 'YES').ERR31
+&AM1TSCP SETB  ('&SNAPCPI' EQ 'YES')
+         MNOTE *,'SNAPCPI SET TO &SNAPCPI'
+         AGO   .NEXT28
+.ERR31   MNOTE 8,'&MP.31 INVALID SNAPCPI OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST SNAPPPI OPTION
+.*
+.**********************************************************************
+.*
+.*       >>--SNAPPPI=--+--NO---+-----><
+.*                     +--YES--+
+.*
+.NEXT28  AIF   (T'&SNAPPPI EQ 'O').ERR32  NULL VALUE ?
+         AIF   ('&SNAPPPI' NE 'NO' AND '&SNAPPPI' NE 'YES').ERR32
+&AM1TSPP SETB  ('&SNAPPPI' EQ 'YES')
+         MNOTE *,'SNAPPPI SET TO &SNAPPPI'
+         AGO   .NEXT29
+.ERR32   MNOTE 8,'&MP.32 INVALID SNAPPPI OPTION'
+&NOGEN   SETB  1
+.*
+.**********************************************************************
+.*
+.*       VALIDATE AND LIST TRACE OPTION
+.*
+.**********************************************************************
+.*
+.*
+.*
+.*                         +--EXCPREQ---,--+
+.*                         +--EXCPCOMP--,--+
+.*                         +--MODFLOW---,--+
+.*                         V               |
+.*       >>--TRACE=--+--(--NO--------------+--)--><
+.*
+.NEXT29  AIF   (T'&TRACE EQ 'O').NEXT30   NULL VALUE ?
+         AIF   (N'&TRACE EQ 1 AND '&TRACE' EQ 'NO').NEXT29A
+&I       SETA  0
+.NEXT29B ANOP
+&I       SETA  &I+1
+         AIF   (&I GT N'&TRACE).NEXT29F
+         AIF   ('&TRACE(&I)' EQ 'EXCPREQ').NEXT29C
+         AIF   ('&TRACE(&I)' EQ 'EXCPCOMP').NEXT29D
+         AIF   ('&TRACE(&I)' EQ 'MODFLOW').NEXT29E
+         AGO   .ERR33              INVALID OPTION
+.NEXT29C ANOP
+&AM1TEXC SETB  1
+         AGO   .NEXT29B
+.NEXT29D ANOP
+&AM1TWAI SETB  1
+         AGO   .NEXT29B
+.NEXT29E ANOP
+&AM1TMOD SETB  1
+         AGO   .NEXT29B
+.NEXT29F MNOTE *,'TRACING OPTIONS SET TO &TRACE'
+         AGO   .NEXT30
+.NEXT29A MNOTE *,'TRACING OPTIONS NOT ACTIVATED'
+         AGO   .NEXT30
+.ERR33   MNOTE 8,'&MP.33 INVALID TRACE OPTION'
+&NOGEN   SETB  1
+.NEXT30  ANOP
+.*
+.*       IF &NOGEN HAS BEEN SET THEN ISSUE MESSAGE AND BYPASS THE
+.*       GENERATION OF THE IERAM1 CSECT
+.*
+         AIF   (NOT &NOGEN).GOCSECT
+       MNOTE 8,'&MP.34 ERROR(S) DETECTED IN PARAMETER SPECIFICATION(S)'
+         MNOTE 8,'NO OPTIONS MODULE GENERATED'
+         AGO   .BYPASS
+.*
+.**********************************************************************
+.*
+.*       GENERATE OPTION SETTING CODE
+.*
+.**********************************************************************
+.*
+.GOCSECT ANOP
+*
+IERAM1   CSECT
+*
+         DC    CL4'1.01'           <----- IDENTIFY RELEASE
+*
+         DS    0XL4                  OPTION FLAGS
+         DC    B'&AM1RES1.&AM1DYNA.&AM1DYNI.&AM1EQU.&AM1ERET.&AM1ESTA.&X
+               AM1ECHK.&AM1FSEX'
+         DC    B'&AM1LIST.&AM1RSET.&AM1SMFR.&AM1SMFL.&AM1LIBS.&AM1MAXS.X
+               &AM1ABMS.&AM1RES2'
+         DC    B'&AM1CALL.&AM1CCRT.&AM1PALL.&AM1PCRT.&AM1RES3.&AM1RES4.X
+               &AM1VSEQ.&AM1CHCK'
+         DC    B'&AM1DIAG.&AM1DSIM.&AM1TEXC.&AM1TWAI.&AM1TMOD.&AM1TSCP.X
+               &AM1TSPP.&AM1TBRK'
+*
+         DC    AL2(&AM1ABC)        ABEND CODE IF NOT MESSAGE NO OPTION
+         DC    CL8'&AM1DYND'       DEVICE TYPE FOR DYNAMIC ALLOCATION
+         DC    AL2(&AM1DYNN)       NUMBER OF DYN ALLOC WORK DATA SETS
+         DC    AL4(&AM1DYNS)       MEGABYTES OF DASD TO ALLOCATE
+         DC    AL2(&AM1DYNP)       % INCR FACTOR IN SPACE CALC OVERHEAD
+         DC    AL4(&AM1MAXL)       MAXIMUM STORAGE LIMIT FOR SORT/MERGE
+         DC    AL4(&AM1MINL)       MINIMUM STORAGE LIMIT FOR SORT/MERGE
+         DC    AL4(&AM1RMAX)       RESVD STORAGE - SIZE = MAX, EXEC
+         DC    AL4(&AM1RMAI)       RESVD STORAGE - SIZE = MAX, INVOKED
+         DC    AL4(&AM1STOR)       SORT STORAGE SIZE
+         DC    CL8'&AM1MDDN'       DDNAME FOR MESSAGE DATA SET
+         DC    CL8'&AM1PDDN'       DDAME FOR PARAMETER DDN
+         DC    CL4'&AM1SDDN'       DEFAULT DDN PREFIX
+         DC    AL2(&AM1SVC)        0 = NO SVC, 109, OR 200 - 255
+         DC    AL2(&AM1SVCE)       SVC ESR NUMBER
+         DC    BL2'&DESC(1)&DESC(2)&DESC(3)&DESC(4)&DESC(5)&DESC(6)&DESX
+               C(7)&DESC(8)&DESC(9)&DESC(10)&DESC(11)&DESC(12)&DESC(13)X
+               &DESC(14)&DESC(15)&DESC(16)'        WTODESC
+         DC    BL2'&ROUT(1)&ROUT(2)&ROUT(3)&ROUT(4)&ROUT(5)&ROUT(6)&ROUX
+               T(7)&ROUT(8)&ROUT(9)&ROUT(10)&ROUT(11)&ROUT(12)&ROUT(13)X
+               &ROUT(14)&ROUT(15)&ROUT(16)'        WTOROUT
+*
+.BYPASS  ANOP
+         MEND                           EXIT FROM SORTMERG MACRO
